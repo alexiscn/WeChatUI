@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct BadgeView: View {
+    
+    var size: Float = 7.0
+    
     var body: some View {
         Circle().foregroundColor(.red)
     }

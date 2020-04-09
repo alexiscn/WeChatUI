@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct SessionRow: View {
     
@@ -14,7 +15,12 @@ struct SessionRow: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            Image(session.avatar).padding()
+            KFImage(session.avatar)
+                .resizable()
+                .frame(width: 40, height: 40)
+                .cornerRadius(6)
+                .padding()
+            
             VStack(alignment: .leading) {
                 HStack {
                     Text(session.name)
@@ -25,6 +31,8 @@ struct SessionRow: View {
                         .foregroundColor(Color.gray)
                         .lineLimit(1)
                 }
+                
+                Spacer().frame(height: 4)
                 
                 Text(session.content)
                     .font(.caption)
@@ -41,6 +49,6 @@ struct SessionRow: View {
 
 struct SessionRow_Previews: PreviewProvider {
     static var previews: some View {
-        SessionRow(session: session)
+        SessionRow(session: Session(id: "1", name: "Hello"))
     }
 }

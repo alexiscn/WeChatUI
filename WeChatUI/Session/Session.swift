@@ -8,15 +8,24 @@
 
 import Foundation
 
-struct Session: Hashable, Codable {
+struct Session: Hashable, Codable, Identifiable {
     
-    var sessionId: String
+    var id: String
     
     var name: String
     
-    var content: String
+    var content: String = ""
     
-    var avatar: String
+    var avatar: URL? = nil
     
-    var updatedTime: String
+    var updatedTime: String = ""
+    
+    var unreadCount: Int = 0
+    
+    var showUnreadAsRedDot: Bool = false
+    
+    init(id: String, name: String) {
+        self.id = id
+        self.name = name
+    }
 }

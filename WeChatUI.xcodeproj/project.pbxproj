@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,7 +31,28 @@
 		A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */; };
 		A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6AB243DFA9E004B0CB8 /* Line.swift */; };
 		A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2635F243ED2CE00A093D2 /* MomentView.swift */; };
+		A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26361243EE10F00A093D2 /* SessionContextMenuView.swift */; };
+		A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26363243EE49A00A093D2 /* SessionContextLine.swift */; };
+		A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */; };
+		A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */; };
+		A3F26370243F07FF00A093D2 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3F2636F243F07FF00A093D2 /* SampleData.json */; };
+		A3F26375243F105100A093D2 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A3F26374243F105100A093D2 /* KingfisherSwiftUI */; };
+		A3F26376243F105100A093D2 /* KingfisherSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A3F26374243F105100A093D2 /* KingfisherSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3F26377243F105100A093D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3F26376243F105100A093D2 /* KingfisherSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A3634BEC243CA4A600D7954C /* WeChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +81,11 @@
 		A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSeparator.swift; sourceTree = "<group>"; };
 		A3ADD6AB243DFA9E004B0CB8 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		A3F2635F243ED2CE00A093D2 /* MomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentView.swift; sourceTree = "<group>"; };
+		A3F26361243EE10F00A093D2 /* SessionContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContextMenuView.swift; sourceTree = "<group>"; };
+		A3F26363243EE49A00A093D2 /* SessionContextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContextLine.swift; sourceTree = "<group>"; };
+		A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
+		A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
+		A3F2636F243F07FF00A093D2 /* SampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F26375243F105100A093D2 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +133,7 @@
 				A3634BF1243CA4A600D7954C /* SceneDelegate.swift */,
 				A3634BF3243CA4A600D7954C /* ContentView.swift */,
 				A3ADD692243DD3BF004B0CB8 /* SampleData.swift */,
+				A3F2636F243F07FF00A093D2 /* SampleData.json */,
 			);
 			path = WeChatUI;
 			sourceTree = "<group>";
@@ -124,6 +152,8 @@
 				A3ADD682243DD10B004B0CB8 /* Session.swift */,
 				A3ADD684243DD18F004B0CB8 /* SessionRow.swift */,
 				A3ADD686243DD2B6004B0CB8 /* SessionListView.swift */,
+				A3F26361243EE10F00A093D2 /* SessionContextMenuView.swift */,
+				A3F26363243EE49A00A093D2 /* SessionContextLine.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -133,6 +163,8 @@
 			children = (
 				A3ADD694243DD72A004B0CB8 /* Message.swift */,
 				A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */,
+				A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */,
+				A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -211,12 +243,16 @@
 				A3634BE8243CA4A600D7954C /* Sources */,
 				A3634BE9243CA4A600D7954C /* Frameworks */,
 				A3634BEA243CA4A600D7954C /* Resources */,
+				A3F26377243F105100A093D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WeChatUI;
+			packageProductDependencies = (
+				A3F26374243F105100A093D2 /* KingfisherSwiftUI */,
+			);
 			productName = WeChatUI;
 			productReference = A3634BEC243CA4A600D7954C /* WeChatUI.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +281,9 @@
 				Base,
 			);
 			mainGroup = A3634BE3243CA4A600D7954C;
+			packageReferences = (
+				A3F26373243F105100A093D2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A3634BED243CA4A600D7954C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,6 +301,7 @@
 				A3634BFC243CA4AB00D7954C /* LaunchScreen.storyboard in Resources */,
 				A3634BF9243CA4AB00D7954C /* Preview Assets.xcassets in Resources */,
 				A3634BF6243CA4AB00D7954C /* Assets.xcassets in Resources */,
+				A3F26370243F07FF00A093D2 /* SampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +324,18 @@
 				A3ADD69A243DD778004B0CB8 /* DiscoverRow.swift in Sources */,
 				A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */,
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
+				A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
+				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
+				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
+				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,
 				A3ADD68E243DD33F004B0CB8 /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +530,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3F26373243F105100A093D2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3F26374243F105100A093D2 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3F26373243F105100A093D2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3634BE4243CA4A600D7954C /* Project object */;
 }
