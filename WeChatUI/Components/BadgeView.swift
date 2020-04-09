@@ -10,15 +10,31 @@ import SwiftUI
 
 struct BadgeView: View {
     
-    var size: Float = 7.0
+    var number: Int = 0
+    
+    private var computedText: String {
+        if number <= 0 {
+            return ""
+        }
+        if number > 99 {
+            return "99+"
+        }
+        return String(number)
+    }
     
     var body: some View {
-        Circle().foregroundColor(.red)
+        ZStack {
+            Circle()
+                .foregroundColor(.red)
+                .frame(width: 30, height: 30)
+            Text(computedText)
+                .foregroundColor(.white)
+        }
     }
 }
 
 struct BadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeView()
+        BadgeView(number: 4)
     }
 }

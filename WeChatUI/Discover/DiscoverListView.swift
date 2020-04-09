@@ -17,7 +17,9 @@ struct DiscoverListView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     Group {
-                        DiscoverRow(discover: .moment)
+                        NavigationLink(destination: MomentView()) {
+                            DiscoverRow(discover: .moment)
+                        }.buttonStyle(PlainButtonStyle())
                         SectionSeparator()
                     }
                     Group {
@@ -27,7 +29,7 @@ struct DiscoverListView: View {
                         SectionSeparator()
                     }
                     Group {
-                        DiscoverRow(discover: .nearby)
+                        DiscoverRow(discover: .nearby, unread: true)
                         SectionSeparator()
                     }
                     Group {

@@ -38,6 +38,8 @@
 		A3F26370243F07FF00A093D2 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3F2636F243F07FF00A093D2 /* SampleData.json */; };
 		A3F26375243F105100A093D2 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A3F26374243F105100A093D2 /* KingfisherSwiftUI */; };
 		A3F26376243F105100A093D2 /* KingfisherSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A3F26374243F105100A093D2 /* KingfisherSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26378243F178300A093D2 /* BadgeDot.swift */; };
+		A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2637B243F1EFE00A093D2 /* SettingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +88,8 @@
 		A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
 		A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
 		A3F2636F243F07FF00A093D2 /* SampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
+		A3F26378243F178300A093D2 /* BadgeDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDot.swift; sourceTree = "<group>"; };
+		A3F2637B243F1EFE00A093D2 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,21 +123,20 @@
 		A3634BEE243CA4A600D7954C /* WeChatUI */ = {
 			isa = PBXGroup;
 			children = (
-				A3F2635E243ED2BE00A093D2 /* Moment */,
 				A3ADD69E243DDC14004B0CB8 /* Common */,
 				A3ADD6A4243DE084004B0CB8 /* Components */,
 				A3ADD696243DD75B004B0CB8 /* Discover */,
+				A3F2635E243ED2BE00A093D2 /* Moment */,
 				A3ADD68A243DD328004B0CB8 /* Contacts */,
 				A3ADD689243DD31B004B0CB8 /* ChatRoom */,
 				A3ADD688243DD30E004B0CB8 /* Session */,
 				A3ADD6A1243DDD2B004B0CB8 /* Me */,
 				A3634BF7243CA4AB00D7954C /* Preview Content */,
+				A3F2637A243F1CC000A093D2 /* SampleData */,
 				A3ADD691243DD35C004B0CB8 /* Supporting Files */,
 				A3634BEF243CA4A600D7954C /* AppDelegate.swift */,
 				A3634BF1243CA4A600D7954C /* SceneDelegate.swift */,
 				A3634BF3243CA4A600D7954C /* ContentView.swift */,
-				A3ADD692243DD3BF004B0CB8 /* SampleData.swift */,
-				A3F2636F243F07FF00A093D2 /* SampleData.json */,
 			);
 			path = WeChatUI;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A3ADD6A2243DDD38004B0CB8 /* MeListView.swift */,
+				A3F2637B243F1EFE00A093D2 /* SettingRow.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				A3ADD6A5243DE099004B0CB8 /* BadgeView.swift */,
+				A3F26378243F178300A093D2 /* BadgeDot.swift */,
 				A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */,
 				A3ADD6AB243DFA9E004B0CB8 /* Line.swift */,
 			);
@@ -231,6 +236,15 @@
 				A3F2635F243ED2CE00A093D2 /* MomentView.swift */,
 			);
 			path = Moment;
+			sourceTree = "<group>";
+		};
+		A3F2637A243F1CC000A093D2 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				A3F2636F243F07FF00A093D2 /* SampleData.json */,
+				A3ADD692243DD3BF004B0CB8 /* SampleData.swift */,
+			);
+			path = SampleData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +334,7 @@
 				A3ADD687243DD2B6004B0CB8 /* SessionListView.swift in Sources */,
 				A3ADD693243DD3BF004B0CB8 /* SampleData.swift in Sources */,
 				A3ADD6A3243DDD38004B0CB8 /* MeListView.swift in Sources */,
+				A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */,
 				A3ADD685243DD18F004B0CB8 /* SessionRow.swift in Sources */,
 				A3ADD69A243DD778004B0CB8 /* DiscoverRow.swift in Sources */,
 				A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */,
@@ -331,6 +346,7 @@
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
+				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,

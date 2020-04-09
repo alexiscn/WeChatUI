@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icons_outlined_album.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

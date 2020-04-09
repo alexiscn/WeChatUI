@@ -10,8 +10,27 @@ import SwiftUI
 
 struct ContactListView: View {
     
+    let contacts: [Contact] = []
+    
     var body: some View {
-        Text("TODO")
+        ZStack {
+            
+            NavigationView {
+                List {
+                    Text("11")
+                }
+                .navigationBarTitle("Contacts", displayMode: .inline)
+                .navigationBarItems(trailing: Button(action: {
+                    withAnimation {
+                        
+                    }
+                }) {
+                    Image("icons_filled_add-friends")
+                        .renderingMode(.original)
+                        .foregroundColor(Color(.label))
+                })
+            }
+        }
     }
     
 }

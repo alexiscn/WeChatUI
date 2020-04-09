@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Contact: Identifiable, Hashable, Codable {
+    
+    var id: String
+    
+    var name: String
+    
+}
