@@ -40,6 +40,10 @@
 		A3F26376243F105100A093D2 /* KingfisherSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A3F26374243F105100A093D2 /* KingfisherSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26378243F178300A093D2 /* BadgeDot.swift */; };
 		A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2637B243F1EFE00A093D2 /* SettingRow.swift */; };
+		A3F2637E243F22E300A093D2 /* MeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2637D243F22E300A093D2 /* MeCardView.swift */; };
+		A3F26381243F276000A093D2 /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26380243F276000A093D2 /* SettingsListView.swift */; };
+		A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26383243F2D3A00A093D2 /* SettingTextRow.swift */; };
+		A3F26387243F2EF100A093D2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26386243F2EF100A093D2 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +94,10 @@
 		A3F2636F243F07FF00A093D2 /* SampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
 		A3F26378243F178300A093D2 /* BadgeDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDot.swift; sourceTree = "<group>"; };
 		A3F2637B243F1EFE00A093D2 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
+		A3F2637D243F22E300A093D2 /* MeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCardView.swift; sourceTree = "<group>"; };
+		A3F26380243F276000A093D2 /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
+		A3F26383243F2D3A00A093D2 /* SettingTextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTextRow.swift; sourceTree = "<group>"; };
+		A3F26386243F2EF100A093D2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 				A3ADD689243DD31B004B0CB8 /* ChatRoom */,
 				A3ADD688243DD30E004B0CB8 /* Session */,
 				A3ADD6A1243DDD2B004B0CB8 /* Me */,
+				A3F2637F243F275000A093D2 /* Settings */,
 				A3634BF7243CA4AB00D7954C /* Preview Content */,
 				A3F2637A243F1CC000A093D2 /* SampleData */,
 				A3ADD691243DD35C004B0CB8 /* Supporting Files */,
@@ -215,6 +224,7 @@
 			children = (
 				A3ADD6A2243DDD38004B0CB8 /* MeListView.swift */,
 				A3F2637B243F1EFE00A093D2 /* SettingRow.swift */,
+				A3F2637D243F22E300A093D2 /* MeCardView.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -245,6 +255,32 @@
 				A3ADD692243DD3BF004B0CB8 /* SampleData.swift */,
 			);
 			path = SampleData;
+			sourceTree = "<group>";
+		};
+		A3F2637F243F275000A093D2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A3F26385243F2EE700A093D2 /* About */,
+				A3F26382243F2D1200A093D2 /* General */,
+				A3F26380243F276000A093D2 /* SettingsListView.swift */,
+				A3F26383243F2D3A00A093D2 /* SettingTextRow.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A3F26382243F2D1200A093D2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		A3F26385243F2EE700A093D2 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A3F26386243F2EF100A093D2 /* AboutView.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */,
+				A3F26387243F2EF100A093D2 /* AboutView.swift in Sources */,
 				A3ADD690243DD34E004B0CB8 /* ContactListView.swift in Sources */,
 				A3ADD6A6243DE099004B0CB8 /* BadgeView.swift in Sources */,
 				A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */,
@@ -346,12 +383,15 @@
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
+				A3F26381243F276000A093D2 /* SettingsListView.swift in Sources */,
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
+				A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */,
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,
+				A3F2637E243F22E300A093D2 /* MeCardView.swift in Sources */,
 				A3ADD68E243DD33F004B0CB8 /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

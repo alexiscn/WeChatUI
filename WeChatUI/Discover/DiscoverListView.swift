@@ -24,20 +24,22 @@ struct DiscoverListView: View {
                     }
                     Group {
                         DiscoverRow(discover: .scan)
-                        Line().padding(.leading, 40)
+                        Divider().padding(.leading, 40)
                         DiscoverRow(discover: .shake)
                         SectionSeparator()
                     }
+                    .background(Color(UIColor.systemBackground))
                     Group {
                         DiscoverRow(discover: .nearby, unread: true)
                         SectionSeparator()
                     }
                     Group {
                         DiscoverRow(discover: .shop)
-                        Line().padding(.leading, 40)
+                        Divider().padding(.leading, 40)
                         DiscoverRow(discover: .game)
                         SectionSeparator()
                     }
+                    .background(Color(UIColor.systemBackground))
                     Group {
                         DiscoverRow(discover: .miniProgram)
                     }

@@ -15,17 +15,9 @@ struct DiscoverRow: View {
     @State var unread: Bool = false
     
     var body: some View {
-        VStack {
-            HStack {
-                Image(discover.icon)
-                Text(discover.title)
-                BadgeDot().opacity(self.unread ? 1: 0)
-                Spacer()
-                Image(systemName: "chevron.right").foregroundColor(.gray)
-            }.padding()
-        }
-        .frame(height: 56)
-        .background(Color(UIColor.systemBackground))
+        SettingRow(icon: discover.icon,
+                   title: discover.title,
+                   unread: unread)
     }
     
 }

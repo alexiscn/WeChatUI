@@ -32,6 +32,7 @@ struct SampleData {
                 session.unreadCount = 2
                 session.showUnreadAsRedDot = true
             }
+            session.updatedTime = "12:50"
             return session
         }
     }()

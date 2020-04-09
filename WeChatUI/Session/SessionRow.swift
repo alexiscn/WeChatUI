@@ -19,7 +19,7 @@ struct SessionRow: View {
                 .resizable()
                 .frame(width: 40, height: 40)
                 .cornerRadius(6)
-                .padding()
+                .padding(.trailing, 8)
             
             VStack(alignment: .leading) {
                 HStack {
@@ -48,7 +48,10 @@ struct SessionRow: View {
 }
 
 struct SessionRow_Previews: PreviewProvider {
+    
+    static let session = SampleData.shared.sessions.first!
+    
     static var previews: some View {
-        SessionRow(session: Session(id: "1", name: "Hello"))
+        SessionRow(session: session)
     }
 }
