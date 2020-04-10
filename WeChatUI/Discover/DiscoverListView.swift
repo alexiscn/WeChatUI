@@ -10,10 +10,12 @@ import SwiftUI
 
 struct DiscoverListView: View {
     
+    @EnvironmentObject var state: RootState
+    
     /// for the reason that Section can not change margin with GroupListStyle
     /// We use ScrollView to build the list
     var body: some View {
-        NavigationView {
+        
             ScrollView {
                 VStack(spacing: 0) {
                     Group {
@@ -46,8 +48,10 @@ struct DiscoverListView: View {
                 }
             }
             .background(Color(UIColor.systemGroupedBackground))
-            .navigationBarTitle("Discover", displayMode: .inline)
-        }
+            .onAppear(perform: {
+                self.state.navigationBarTitle = "Discover"
+                self.state.navigationBarTrailingItems = .init(EmptyView())
+            })
     }
     
 }
@@ -56,5 +60,6 @@ struct DiscoverListView_Previews: PreviewProvider {
     
     static var previews: some View {
         DiscoverListView()
+            .environmentObject(RootState())
     }
 }

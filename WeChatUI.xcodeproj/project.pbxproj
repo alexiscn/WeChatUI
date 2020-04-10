@@ -13,6 +13,8 @@
 		A3634BF6243CA4AB00D7954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3634BF5243CA4AB00D7954C /* Assets.xcassets */; };
 		A3634BF9243CA4AB00D7954C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3634BF8243CA4AB00D7954C /* Preview Assets.xcassets */; };
 		A3634BFC243CA4AB00D7954C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3634BFA243CA4AB00D7954C /* LaunchScreen.storyboard */; };
+		A3A8B02924401E3200FE0410 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02824401E3200FE0410 /* RichText.swift */; };
+		A3A8B02B2440378900FE0410 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02A2440378900FE0410 /* RootState.swift */; };
 		A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD682243DD10B004B0CB8 /* Session.swift */; };
 		A3ADD685243DD18F004B0CB8 /* SessionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD684243DD18F004B0CB8 /* SessionRow.swift */; };
 		A3ADD687243DD2B6004B0CB8 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD686243DD2B6004B0CB8 /* SessionListView.swift */; };
@@ -69,6 +71,8 @@
 		A3634BF8243CA4AB00D7954C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3634BFB243CA4AB00D7954C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3634BFD243CA4AB00D7954C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A8B02824401E3200FE0410 /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
+		A3A8B02A2440378900FE0410 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		A3ADD682243DD10B004B0CB8 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A3ADD684243DD18F004B0CB8 /* SessionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRow.swift; sourceTree = "<group>"; };
 		A3ADD686243DD2B6004B0CB8 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				A3634BEF243CA4A600D7954C /* AppDelegate.swift */,
 				A3634BF1243CA4A600D7954C /* SceneDelegate.swift */,
 				A3634BF3243CA4A600D7954C /* ContentView.swift */,
+				A3A8B02A2440378900FE0410 /* RootState.swift */,
 			);
 			path = WeChatUI;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				A3F26378243F178300A093D2 /* BadgeDot.swift */,
 				A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */,
 				A3ADD6AB243DFA9E004B0CB8 /* Line.swift */,
+				A3A8B02824401E3200FE0410 /* RichText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -378,10 +384,12 @@
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
 				A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
+				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
+				A3A8B02924401E3200FE0410 /* RichText.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
 				A3F26381243F276000A093D2 /* SettingsListView.swift in Sources */,
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,

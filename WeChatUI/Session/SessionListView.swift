@@ -12,32 +12,24 @@ struct SessionListView: View {
     
     @State private var showContextMenu = false
     
+    @EnvironmentObject var state: RootState
+    
     let sessions: [Session] = SampleData.shared.sessions
     
     var body: some View {
         ZStack {
-            NavigationView {
-                List {
-                    ForEach(sessions) { session in
-                        ZStack {
-                            SessionRow(session: session)
-                            NavigationLink(destination: ChatRoomView()) {
-                                EmptyView()
-                            }
+            
+            List {
+                ForEach(sessions) { session in
+                    ZStack {
+                        SessionRow(session: session)
+                        NavigationLink(destination: ChatRoomView()) {
+                            EmptyView()
                         }
                     }
                 }
-                .navigationBarTitle("WeChat", displayMode: .inline)
-                .navigationBarItems(trailing: Button(action: {
-                    withAnimation {
-                        self.showContextMenu.toggle()
-                    }
-                }) {
-                    Image("icons_outlined_addoutline")
-                        .renderingMode(.original)
-                        .foregroundColor(Color(.label))
-                })
             }
+            
             
             if self.showContextMenu {
                 GeometryReader { geometry in
@@ -53,11 +45,24 @@ struct SessionListView: View {
                 )
             }
         }
+        .onAppear {
+            self.state.navigationBarTitle = "WeChat"
+            self.state.navigationBarTrailingItems = AnyView(Button(action: {
+                withAnimation {
+                    self.showContextMenu.toggle()
+                }
+            }) {
+                Image("icons_outlined_addoutline")
+                    .renderingMode(.template)
+                    .foregroundColor(Color(.label))
+            })
+        }
     }
 }
 
 struct SessionListView_Previews: PreviewProvider {
     static var previews: some View {
         SessionListView()
+            .environmentObject(RootState())
     }
 }

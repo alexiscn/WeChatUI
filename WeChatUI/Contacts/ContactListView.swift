@@ -10,26 +10,25 @@ import SwiftUI
 
 struct ContactListView: View {
     
+    @EnvironmentObject var state: RootState
+    
     let contacts: [Contact] = []
     
     var body: some View {
-        ZStack {
-            
-            NavigationView {
-                List {
-                    Text("11")
+        List {
+            Text("11")
+        }
+        .onAppear {
+            self.state.navigationBarTitle = "Contacts"
+            self.state.navigationBarTrailingItems = AnyView(Button(action: {
+                withAnimation {
+                    
                 }
-                .navigationBarTitle("Contacts", displayMode: .inline)
-                .navigationBarItems(trailing: Button(action: {
-                    withAnimation {
-                        
-                    }
-                }) {
-                    Image("icons_filled_add-friends")
-                        .renderingMode(.original)
-                        .foregroundColor(Color(.label))
-                })
-            }
+            }) {
+                Image("icons_filled_add-friends")
+                    .renderingMode(.template)
+                    .foregroundColor(Color(.label))
+            })
         }
     }
     
