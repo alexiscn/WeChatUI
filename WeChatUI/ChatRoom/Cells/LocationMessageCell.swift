@@ -1,21 +1,21 @@
 //
-//  TextMessageCell.swift
+//  LocationMessageCell.swift
 //  WeChatUI
 //
-//  Created by xu.shuifeng on 2020/4/9.
+//  Created by xu.shuifeng on 2020/4/10.
 //  Copyright © 2020 alexiscn. All rights reserved.
 //
 
 import SwiftUI
 
-struct TextMessageCell: View {
+struct LocationMessageCell: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct TextMessageCell_Previews: PreviewProvider {
+struct LocationMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        TextMessageCell()
+        LocationMessageCell()
     }
 }

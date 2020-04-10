@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SampleData {
+class SampleData {
     
     static var shared = SampleData()
     
@@ -37,6 +37,25 @@ struct SampleData {
         }
     }()
     
+    lazy var messages: [Message] = {
+        var list: [Message] = []
+        let myID = "10001"
+        let userID = "10002"
+        let now = Int(Date().timeIntervalSince1970)
+        let past = 1560493108
+        for index in 0 ..< 30 {
+            let randomTime = Int(arc4random_uniform(UInt32(now - past))) + past
+            var msg = Message(id: String(index))
+            msg.chatId = userID
+            msg.senderId = index % 2 == 0 ? userID: myID
+            msg.time = randomTime
+            msg.content = .text("Hello World")
+            list.append(msg)
+        }
+        list.sort(by: { $0.time < $1.time })
+        return list
+    }()
+    
     func random<T>(of list: [T]) -> T {
         let count = list.count
         let index = Int(arc4random_uniform(UInt32(count)))
@@ -45,6 +64,11 @@ struct SampleData {
     
     func randomMessage() -> String {
         return random(of: data.messages)
+    }
+    
+    func loadMessages(with session: Session) -> [Message] {
+        // TODO
+        return self.messages
     }
 }
 

@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().tintColor = .label
+        UITableViewCell.appearance().accessoryType = .none
+        //UITabBar.appearance().unselectedItemTintColor = UIColor(white: 125.0/255, alpha: 1.0)
         
         return true
     }

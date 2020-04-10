@@ -19,14 +19,9 @@ struct SessionListView: View {
     var body: some View {
         ZStack {
             
-            List {
-                ForEach(sessions) { session in
-                    ZStack {
-                        SessionRow(session: session)
-                        NavigationLink(destination: ChatRoomView()) {
-                            EmptyView()
-                        }
-                    }
+            List(sessions) { session in
+                NavigationLink(destination: ChatRoomView(session: session)) {
+                    SessionRow(session: session)
                 }
             }
             

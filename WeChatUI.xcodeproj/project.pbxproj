@@ -13,6 +13,10 @@
 		A3634BF6243CA4AB00D7954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3634BF5243CA4AB00D7954C /* Assets.xcassets */; };
 		A3634BF9243CA4AB00D7954C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3634BF8243CA4AB00D7954C /* Preview Assets.xcassets */; };
 		A3634BFC243CA4AB00D7954C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3634BFA243CA4AB00D7954C /* LaunchScreen.storyboard */; };
+		A372775024404741007EC7A6 /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372774F24404741007EC7A6 /* ChatMessageRow.swift */; };
+		A3727753244052FC007EC7A6 /* VideoMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3727752244052FC007EC7A6 /* VideoMessageCell.swift */; };
+		A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775424405308007EC7A6 /* LocationMessageCell.swift */; };
+		A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775624405316007EC7A6 /* VoiceMessageCell.swift */; };
 		A3A8B02924401E3200FE0410 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02824401E3200FE0410 /* RichText.swift */; };
 		A3A8B02B2440378900FE0410 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02A2440378900FE0410 /* RootState.swift */; };
 		A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD682243DD10B004B0CB8 /* Session.swift */; };
@@ -71,6 +75,10 @@
 		A3634BF8243CA4AB00D7954C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3634BFB243CA4AB00D7954C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3634BFD243CA4AB00D7954C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A372774F24404741007EC7A6 /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
+		A3727752244052FC007EC7A6 /* VideoMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessageCell.swift; sourceTree = "<group>"; };
+		A372775424405308007EC7A6 /* LocationMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMessageCell.swift; sourceTree = "<group>"; };
+		A372775624405316007EC7A6 /* VoiceMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMessageCell.swift; sourceTree = "<group>"; };
 		A3A8B02824401E3200FE0410 /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
 		A3A8B02A2440378900FE0410 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		A3ADD682243DD10B004B0CB8 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -163,6 +171,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A3727751244052E4007EC7A6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */,
+				A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */,
+				A3727752244052FC007EC7A6 /* VideoMessageCell.swift */,
+				A372775424405308007EC7A6 /* LocationMessageCell.swift */,
+				A372775624405316007EC7A6 /* VoiceMessageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A3ADD688243DD30E004B0CB8 /* Session */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,10 +198,10 @@
 		A3ADD689243DD31B004B0CB8 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				A3727751244052E4007EC7A6 /* Cells */,
 				A3ADD694243DD72A004B0CB8 /* Message.swift */,
 				A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */,
-				A3F2636B243F01AE00A093D2 /* TextMessageCell.swift */,
-				A3F2636D243F01BC00A093D2 /* ImageMessageCell.swift */,
+				A372774F24404741007EC7A6 /* ChatMessageRow.swift */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -373,15 +393,19 @@
 				A3ADD690243DD34E004B0CB8 /* ContactListView.swift in Sources */,
 				A3ADD6A6243DE099004B0CB8 /* BadgeView.swift in Sources */,
 				A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */,
+				A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */,
 				A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */,
 				A3ADD687243DD2B6004B0CB8 /* SessionListView.swift in Sources */,
 				A3ADD693243DD3BF004B0CB8 /* SampleData.swift in Sources */,
 				A3ADD6A3243DDD38004B0CB8 /* MeListView.swift in Sources */,
 				A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */,
+				A3727753244052FC007EC7A6 /* VideoMessageCell.swift in Sources */,
 				A3ADD685243DD18F004B0CB8 /* SessionRow.swift in Sources */,
 				A3ADD69A243DD778004B0CB8 /* DiscoverRow.swift in Sources */,
 				A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */,
+				A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */,
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
+				A372775024404741007EC7A6 /* ChatMessageRow.swift in Sources */,
 				A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
 				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
