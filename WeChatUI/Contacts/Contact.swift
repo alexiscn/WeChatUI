@@ -14,4 +14,14 @@ struct Contact: Identifiable, Hashable, Codable {
     
     var name: String
     
+    var avatar: URL?
+    
+}
+
+struct ContactGroup {
+    
+    var letter: String
+    
+    var items: [Contact]
+    
 }

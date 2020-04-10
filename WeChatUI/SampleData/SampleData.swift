@@ -70,6 +70,10 @@ class SampleData {
         // TODO
         return self.messages
     }
+    
+    func contacts() -> [Contact] {
+        return data.users.map { $0.toContact() }
+    }
 }
 
 struct MockData: Codable {
@@ -101,5 +105,9 @@ struct User: Codable {
     let country: String
     
     let wxid: String
-    
+ 
+    func toContact() -> Contact {
+        let contact = Contact(id: identifier, name: name, avatar: avatar)
+        return contact
+    }
 }

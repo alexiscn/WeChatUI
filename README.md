@@ -2,8 +2,27 @@
 Create WeChat with SwiftUI
 
 
-![Home](Assets/01.png)
 
-![Discover](Assets/02.png)
+A startup project for learning SwiftUI.
 
-![Me](Assets/03.png)
+
+
+## Status
+
+
+- [x] Session
+  - [ ] ChatRoom
+- [ ] Contacts
+- [ ] Discover
+  - [ ] Moment
+- [ ] Me
+  - [ ] Settings
+
+
+## Previews
+
+<img src="Assets/01.png" width="360"/>
+
+<img src="Assets/02.png" width="360"/>
+
+<img src="Assets/03.png" width="360"/>

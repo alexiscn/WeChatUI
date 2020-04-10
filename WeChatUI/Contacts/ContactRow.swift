@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct ContactRow: View {
     
@@ -14,13 +15,14 @@ struct ContactRow: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "person.badge.plus.fill")
+            KFImage(contact.avatar)
                 .resizable()
                 .frame(width: 40, height: 40)
-                .cornerRadius(6)
-            Text("Hello World")
+                .cornerRadius(3)
+            Text(contact.name)
             Spacer()
         }
+        .frame(height: 50)
     }
 }
 

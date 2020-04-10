@@ -12,18 +12,32 @@ struct ContactListView: View {
     
     @EnvironmentObject var state: RootState
     
-    let contacts: [Contact] = []
+    @State var contacts: [Contact] = SampleData.shared.contacts()
+    
+    var actions: [ContactAction] = ContactAction.allCases
     
     var body: some View {
         List {
-            Text("11")
+            ForEach(actions, id: \.self) { action in
+                VStack(spacing: 0) {
+                    ContactActionRow(action: action)
+                    Divider().padding(.leading, 60)
+                }
+            }
+            .listRowInsets(EdgeInsets())
+            
+            ForEach(contacts) { contact in
+                Section(header: ContactSectionHeader(title: "A")) {
+                    ContactRow(contact: contact)
+                }
+            }
         }
+        .listStyle(PlainListStyle())
         .onAppear {
+            self.loadContacts()
             self.state.navigationBarTitle = "Contacts"
             self.state.navigationBarTrailingItems = AnyView(Button(action: {
-                withAnimation {
-                    
-                }
+                
             }) {
                 Image("icons_filled_add-friends")
                     .renderingMode(.template)
@@ -32,11 +46,15 @@ struct ContactListView: View {
         }
     }
     
+    private func loadContacts() {
+        
+    }
 }
 
 struct ContactListView_Previews: PreviewProvider {
     
     static var previews: some View {
         ContactListView()
+        .environmentObject(RootState())
     }
 }

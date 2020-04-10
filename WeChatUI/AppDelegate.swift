@@ -19,8 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().tintColor = .label
+        
+        UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().backgroundColor = .clear
+        
         UITableViewCell.appearance().accessoryType = .none
-        //UITabBar.appearance().unselectedItemTintColor = UIColor(white: 125.0/255, alpha: 1.0)
+        UITableViewCell.appearance().backgroundColor = .clear
         
         return true
     }

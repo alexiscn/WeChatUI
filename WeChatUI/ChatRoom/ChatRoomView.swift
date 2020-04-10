@@ -18,9 +18,6 @@ struct ChatRoomView: View {
     
     init(session: Session) {
         self.session = session
-        UITableView.appearance().separatorStyle = .none
-        UITableView.appearance().backgroundColor = .clear
-        UITableViewCell.appearance().backgroundColor = .clear
     }
     
     var body: some View {
