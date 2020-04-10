@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ImageMessageCell: View {
+    
+    var maxSize = Constants.screenWidth * 0.5
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("2")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(maxWidth: maxSize, maxHeight: maxSize)
+            .clipped()
+            .cornerRadius(10)
     }
 }
 

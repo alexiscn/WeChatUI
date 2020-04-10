@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Message: Codable, Identifiable {
     
@@ -44,4 +45,13 @@ struct Message: Codable, Identifiable {
 enum MessageContent {
     case none
     case text(String)
+    case image(ImageMessage)
+}
+
+
+struct ImageMessage {
+    
+    var size: CGSize
+    
+    var image: String
 }

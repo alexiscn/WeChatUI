@@ -23,8 +23,11 @@ struct ChatRoomView: View {
     
     var body: some View {
         
-        List(messages) { msg in
-            ChatMessageRow(message: msg)
+        VStack {
+            List(messages) { msg in
+                ChatMessageRow(message: msg)
+            }
+            ChatInputView()
         }
         .background(Color(UIColor.systemGroupedBackground))
         .onAppear {

@@ -12,10 +12,10 @@ struct TextMessageCell: View {
     
     var text: String
     
-    var isSender: Bool
+    var isOutgoing: Bool
     
     var backgroundImage: String {
-        return isSender ? "ChatRoom_Bubble_Text_Sender_Green_57x40_": "ChatRoom_Bubble_Text_Receiver_White_57x40_"
+        return isOutgoing ? "ChatRoom_Bubble_Text_Sender_Green_57x40_": "ChatRoom_Bubble_Text_Receiver_White_57x40_"
     }
     
     var body: some View {
@@ -31,6 +31,6 @@ struct TextMessageCell: View {
 
 struct TextMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        TextMessageCell(text: "Hello world", isSender: false)
+        TextMessageCell(text: "Hello world", isOutgoing: false)
     }
 }

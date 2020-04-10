@@ -34,7 +34,7 @@ struct ChatMessageRow: View {
         
         switch message.content {
         case .text(let text):
-            return AnyView(TextMessageCell(text: text, isSender: message.isOutgoing))
+            return AnyView(TextMessageCell(text: text, isOutgoing: message.isOutgoing))
         default:
             return AnyView(EmptyView())
         }

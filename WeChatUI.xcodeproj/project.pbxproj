@@ -17,6 +17,9 @@
 		A3727753244052FC007EC7A6 /* VideoMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3727752244052FC007EC7A6 /* VideoMessageCell.swift */; };
 		A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775424405308007EC7A6 /* LocationMessageCell.swift */; };
 		A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775624405316007EC7A6 /* VoiceMessageCell.swift */; };
+		A372775A24405420007EC7A6 /* ChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775924405420007EC7A6 /* ChatInputView.swift */; };
+		A372775C24405BE6007EC7A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775B24405BE6007EC7A6 /* Constants.swift */; };
+		A372775E24405DB1007EC7A6 /* EmoticonMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775D24405DB1007EC7A6 /* EmoticonMessageCell.swift */; };
 		A3A8B02924401E3200FE0410 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02824401E3200FE0410 /* RichText.swift */; };
 		A3A8B02B2440378900FE0410 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02A2440378900FE0410 /* RootState.swift */; };
 		A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD682243DD10B004B0CB8 /* Session.swift */; };
@@ -79,6 +82,9 @@
 		A3727752244052FC007EC7A6 /* VideoMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessageCell.swift; sourceTree = "<group>"; };
 		A372775424405308007EC7A6 /* LocationMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMessageCell.swift; sourceTree = "<group>"; };
 		A372775624405316007EC7A6 /* VoiceMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMessageCell.swift; sourceTree = "<group>"; };
+		A372775924405420007EC7A6 /* ChatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputView.swift; sourceTree = "<group>"; };
+		A372775B24405BE6007EC7A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A372775D24405DB1007EC7A6 /* EmoticonMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonMessageCell.swift; sourceTree = "<group>"; };
 		A3A8B02824401E3200FE0410 /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
 		A3A8B02A2440378900FE0410 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		A3ADD682243DD10B004B0CB8 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -179,8 +185,17 @@
 				A3727752244052FC007EC7A6 /* VideoMessageCell.swift */,
 				A372775424405308007EC7A6 /* LocationMessageCell.swift */,
 				A372775624405316007EC7A6 /* VoiceMessageCell.swift */,
+				A372775D24405DB1007EC7A6 /* EmoticonMessageCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		A37277582440540E007EC7A6 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				A372775924405420007EC7A6 /* ChatInputView.swift */,
+			);
+			path = InputView;
 			sourceTree = "<group>";
 		};
 		A3ADD688243DD30E004B0CB8 /* Session */ = {
@@ -198,6 +213,7 @@
 		A3ADD689243DD31B004B0CB8 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				A37277582440540E007EC7A6 /* InputView */,
 				A3727751244052E4007EC7A6 /* Cells */,
 				A3ADD694243DD72A004B0CB8 /* Message.swift */,
 				A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */,
@@ -240,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				A3ADD69F243DDC23004B0CB8 /* WXColor.swift */,
+				A372775B24405BE6007EC7A6 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -405,8 +422,10 @@
 				A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */,
 				A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */,
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
+				A372775A24405420007EC7A6 /* ChatInputView.swift in Sources */,
 				A372775024404741007EC7A6 /* ChatMessageRow.swift in Sources */,
 				A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */,
+				A372775C24405BE6007EC7A6 /* Constants.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
 				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
@@ -425,6 +444,7 @@
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,
 				A3F2637E243F22E300A093D2 /* MeCardView.swift in Sources */,
 				A3ADD68E243DD33F004B0CB8 /* ContactRow.swift in Sources */,
+				A372775E24405DB1007EC7A6 /* EmoticonMessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
