@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ImageMessageCell: View {
     
+    var image: ImageMessage
+    
     var maxSize = Constants.screenWidth * 0.5
     
     var body: some View {
@@ -24,6 +26,6 @@ struct ImageMessageCell: View {
 
 struct ImageMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        ImageMessageCell()
+        ImageMessageCell(image: ImageMessage(size: .zero, image: "11"))
     }
 }

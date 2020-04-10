@@ -12,6 +12,8 @@ struct ChatRoomView: View {
     
     var session: Session
     
+    @ObservedObject private var keyboard = KeyboardObserver()
+    
     @State var messages: [Message] = []
     
     init(session: Session) {
@@ -25,7 +27,7 @@ struct ChatRoomView: View {
         
         VStack {
             List(messages) { msg in
-                ChatMessageRow(message: msg)
+                ChatMessageRow(message: msg, session: self.session)
             }
             ChatInputView()
         }
@@ -33,6 +35,8 @@ struct ChatRoomView: View {
         .onAppear {
             self.messages = SampleData.shared.loadMessages(with: self.session)
         }
+        .padding(.bottom, keyboard.height)
+        .animation(.easeIn(duration: 0.25))
     }
 }
 

@@ -34,6 +34,8 @@ struct Message: Codable, Identifiable {
     var content: MessageContent = .none
     
     var time: Int = 0
+
+    var displayedTimeText: String? = nil
     
     var isOutgoing: Bool { return senderId != chatId }
     
@@ -46,6 +48,7 @@ enum MessageContent {
     case none
     case text(String)
     case image(ImageMessage)
+    case video(VideoMessage)
 }
 
 
@@ -54,4 +57,9 @@ struct ImageMessage {
     var size: CGSize
     
     var image: String
+}
+
+
+struct VideoMessage {
+    
 }

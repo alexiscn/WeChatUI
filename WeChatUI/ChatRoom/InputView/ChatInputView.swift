@@ -17,7 +17,8 @@ struct ChatInputView: View {
         ZStack {
             TextField("Start to talk", text: $text)
                 .padding()
-        }.background(Color.green)
+        }
+        .background(Color(UIColor.systemBackground))
         
     }
 }

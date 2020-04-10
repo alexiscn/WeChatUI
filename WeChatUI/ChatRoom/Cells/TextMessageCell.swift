@@ -21,7 +21,9 @@ struct TextMessageCell: View {
     var body: some View {
         
         ZStack {
-            Text(text).padding()
+            Text(text)
+                .padding(.horizontal)
+                .padding(.vertical, 7)
         }
         .background(
             Image(backgroundImage)
@@ -31,6 +33,6 @@ struct TextMessageCell: View {
 
 struct TextMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        TextMessageCell(text: "Hello world", isOutgoing: false)
+        TextMessageCell(text: "Hello world", isOutgoing: true)
     }
 }
