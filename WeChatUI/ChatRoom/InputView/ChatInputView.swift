@@ -14,11 +14,50 @@ struct ChatInputView: View {
     
     var body: some View {
         
-        ZStack {
-            TextField("Start to talk", text: $text)
-                .padding()
-        }
-        .background(Color(UIColor.systemBackground))
+        VStack {
+            HStack {
+                Button(action: {
+                    
+                }) {
+                    Image("chatroom_bar_voice")
+                        .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(Color(.label))
+                        .frame(width: 24, height: 24)
+                }.padding(.leading)
+            
+                TextField("Start to talk", text: $text)
+                    .padding(.all, 10)
+                    .background(Color(UIColor.systemBackground))
+                    .cornerRadius(6)
+                
+                Button(action: {
+                    
+                }) {
+                    Image("chatroom_bar_sticker")
+                        .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(Color(.label))
+                        .frame(width: 24, height: 24)
+                }
+            
+                Button(action: {
+                    
+                }) {
+                    Image("chatroom_bar_more")
+                        .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(Color(.label))
+                        .frame(width: 24, height: 24)
+                }
+                .padding(.trailing)
+            
+            }.padding(.vertical, 7)
+        }.background(Color(UIColor.systemGroupedBackground))
+            
+            
+        
+        
         
     }
 }

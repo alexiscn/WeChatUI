@@ -41,6 +41,11 @@
 		A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */; };
 		A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */; };
 		A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6AB243DFA9E004B0CB8 /* Line.swift */; };
+		A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */; };
+		A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C0D3182441D7BF005F9B6C /* expressions.json */; };
+		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
+		A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */; };
+		A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */; };
 		A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */; };
 		A3D842092440C1CA00ACE501 /* ContactActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842082440C1CA00ACE501 /* ContactActionRow.swift */; };
 		A3D8420B2440C1EE00ACE501 /* ContactAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8420A2440C1EE00ACE501 /* ContactAction.swift */; };
@@ -112,6 +117,11 @@
 		A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSeparator.swift; sourceTree = "<group>"; };
 		A3ADD6AB243DFA9E004B0CB8 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonBoard.swift; sourceTree = "<group>"; };
+		A3C0D3182441D7BF005F9B6C /* expressions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expressions.json; sourceTree = "<group>"; };
+		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonRow.swift; sourceTree = "<group>"; };
+		A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
 		A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionHeader.swift; sourceTree = "<group>"; };
 		A3D842082440C1CA00ACE501 /* ContactActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactActionRow.swift; sourceTree = "<group>"; };
 		A3D8420A2440C1EE00ACE501 /* ContactAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAction.swift; sourceTree = "<group>"; };
@@ -172,6 +182,7 @@
 				A3F2637F243F275000A093D2 /* Settings */,
 				A3634BF7243CA4AB00D7954C /* Preview Content */,
 				A3F2637A243F1CC000A093D2 /* SampleData */,
+				A3C0D3172441D7AE005F9B6C /* Resources */,
 				A3ADD691243DD35C004B0CB8 /* Supporting Files */,
 				A3634BEF243CA4A600D7954C /* AppDelegate.swift */,
 				A3634BF1243CA4A600D7954C /* SceneDelegate.swift */,
@@ -213,6 +224,9 @@
 		A372775F244061E2007EC7A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */,
+				A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */,
+				A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +321,15 @@
 				A3F227812441704C00B0B77B /* SearchBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A3C0D3172441D7AE005F9B6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3C0D3182441D7BF005F9B6C /* expressions.json */,
+				A3C0D31A2441D803005F9B6C /* Expression.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A3F2635E243ED2BE00A093D2 /* Moment */ = {
@@ -417,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */,
 				A3634BFC243CA4AB00D7954C /* LaunchScreen.storyboard in Resources */,
 				A3634BF9243CA4AB00D7954C /* Preview Assets.xcassets in Resources */,
 				A3634BF6243CA4AB00D7954C /* Assets.xcassets in Resources */,
@@ -439,8 +463,10 @@
 				A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */,
 				A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */,
 				A3ADD687243DD2B6004B0CB8 /* SessionListView.swift in Sources */,
+				A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */,
 				A3ADD693243DD3BF004B0CB8 /* SampleData.swift in Sources */,
 				A3ADD6A3243DDD38004B0CB8 /* MeListView.swift in Sources */,
+				A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */,
 				A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */,
 				A3D842092440C1CA00ACE501 /* ContactActionRow.swift in Sources */,
 				A3727753244052FC007EC7A6 /* VideoMessageCell.swift in Sources */,
@@ -458,6 +484,7 @@
 				A372775C24405BE6007EC7A6 /* Constants.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
 				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
+				A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
@@ -465,6 +492,7 @@
 				A3A8B02924401E3200FE0410 /* RichText.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
 				A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */,
+				A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */,
 				A3F26381243F276000A093D2 /* SettingsListView.swift in Sources */,
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,

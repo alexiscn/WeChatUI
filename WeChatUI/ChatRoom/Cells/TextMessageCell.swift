@@ -24,6 +24,7 @@ struct TextMessageCell: View {
             Text(text)
                 .padding(.horizontal)
                 .padding(.vertical, 7)
+                .font(.system(size: 16))
         }
         .background(
             Image(backgroundImage)

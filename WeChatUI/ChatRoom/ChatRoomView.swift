@@ -28,7 +28,7 @@ struct ChatRoomView: View {
             }
             ChatInputView()
         }
-        .background(Color(UIColor.systemGroupedBackground))
+        .background(Color(UIColor.systemGroupedBackground).edgesIgnoringSafeArea(.all))
         .onAppear {
             self.messages = SampleData.shared.loadMessages(with: self.session)
         }
