@@ -44,6 +44,7 @@
 		A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */; };
 		A3D842092440C1CA00ACE501 /* ContactActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842082440C1CA00ACE501 /* ContactActionRow.swift */; };
 		A3D8420B2440C1EE00ACE501 /* ContactAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8420A2440C1EE00ACE501 /* ContactAction.swift */; };
+		A3F227822441704C00B0B77B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F227812441704C00B0B77B /* SearchBar.swift */; };
 		A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2635F243ED2CE00A093D2 /* MomentView.swift */; };
 		A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26361243EE10F00A093D2 /* SessionContextMenuView.swift */; };
 		A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F26363243EE49A00A093D2 /* SessionContextLine.swift */; };
@@ -114,6 +115,7 @@
 		A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionHeader.swift; sourceTree = "<group>"; };
 		A3D842082440C1CA00ACE501 /* ContactActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactActionRow.swift; sourceTree = "<group>"; };
 		A3D8420A2440C1EE00ACE501 /* ContactAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAction.swift; sourceTree = "<group>"; };
+		A3F227812441704C00B0B77B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A3F2635F243ED2CE00A093D2 /* MomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentView.swift; sourceTree = "<group>"; };
 		A3F26361243EE10F00A093D2 /* SessionContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContextMenuView.swift; sourceTree = "<group>"; };
 		A3F26363243EE49A00A093D2 /* SessionContextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContextLine.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				A3ADD6AB243DFA9E004B0CB8 /* Line.swift */,
 				A3A8B02824401E3200FE0410 /* RichText.swift */,
 				A372776024406237007EC7A6 /* AvatarView.swift */,
+				A3F227812441704C00B0B77B /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,
+				A3F227822441704C00B0B77B /* SearchBar.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
 				A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */,
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,

@@ -18,9 +18,13 @@ struct SessionListView: View {
     
     var body: some View {
         ZStack {
-            List(sessions) { session in
-                NavigationLink(destination: ChatRoomView(session: session)) {
-                    SessionRow(session: session)
+            
+            List {
+                SearchBar().listRowInsets(EdgeInsets())
+                ForEach(sessions) { session in
+                    NavigationLink(destination: ChatRoomView(session: session)) {
+                        SessionRow(session: session)
+                    }
                 }
             }
             
