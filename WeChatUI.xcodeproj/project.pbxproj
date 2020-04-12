@@ -46,6 +46,14 @@
 		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
 		A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */; };
 		A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */; };
+		A3C0D32424431BF2005F9B6C /* MomentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32324431BF2005F9B6C /* MomentRow.swift */; };
+		A3C0D32724431C03005F9B6C /* MomentTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32624431C03005F9B6C /* MomentTextCell.swift */; };
+		A3C0D32924431C0E005F9B6C /* MomentImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */; };
+		A3C0D32B24431C1B005F9B6C /* MomentMultiImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */; };
+		A3C0D32D24431C27005F9B6C /* MomentVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */; };
+		A3C0D32F24431CA2005F9B6C /* MomentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32E24431CA2005F9B6C /* MomentHeader.swift */; };
+		A3C0D33124431CC0005F9B6C /* MomentNotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D33024431CC0005F9B6C /* MomentNotificationRow.swift */; };
+		A3C0D33324431D29005F9B6C /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D33224431D29005F9B6C /* Moment.swift */; };
 		A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */; };
 		A3D842092440C1CA00ACE501 /* ContactActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D842082440C1CA00ACE501 /* ContactActionRow.swift */; };
 		A3D8420B2440C1EE00ACE501 /* ContactAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8420A2440C1EE00ACE501 /* ContactAction.swift */; };
@@ -122,6 +130,14 @@
 		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonRow.swift; sourceTree = "<group>"; };
 		A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
+		A3C0D32324431BF2005F9B6C /* MomentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentRow.swift; sourceTree = "<group>"; };
+		A3C0D32624431C03005F9B6C /* MomentTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTextCell.swift; sourceTree = "<group>"; };
+		A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentImageCell.swift; sourceTree = "<group>"; };
+		A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentMultiImageCell.swift; sourceTree = "<group>"; };
+		A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentVideoCell.swift; sourceTree = "<group>"; };
+		A3C0D32E24431CA2005F9B6C /* MomentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentHeader.swift; sourceTree = "<group>"; };
+		A3C0D33024431CC0005F9B6C /* MomentNotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentNotificationRow.swift; sourceTree = "<group>"; };
+		A3C0D33224431D29005F9B6C /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		A3D842062440A5C100ACE501 /* ContactSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionHeader.swift; sourceTree = "<group>"; };
 		A3D842082440C1CA00ACE501 /* ContactActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactActionRow.swift; sourceTree = "<group>"; };
 		A3D8420A2440C1EE00ACE501 /* ContactAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAction.swift; sourceTree = "<group>"; };
@@ -332,10 +348,26 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A3C0D32524431BF7005F9B6C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A3C0D32624431C03005F9B6C /* MomentTextCell.swift */,
+				A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */,
+				A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */,
+				A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A3F2635E243ED2BE00A093D2 /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				A3C0D32524431BF7005F9B6C /* Cells */,
 				A3F2635F243ED2CE00A093D2 /* MomentView.swift */,
+				A3C0D32324431BF2005F9B6C /* MomentRow.swift */,
+				A3C0D32E24431CA2005F9B6C /* MomentHeader.swift */,
+				A3C0D33024431CC0005F9B6C /* MomentNotificationRow.swift */,
+				A3C0D33224431D29005F9B6C /* Moment.swift */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -459,6 +491,7 @@
 				A3F26387243F2EF100A093D2 /* AboutView.swift in Sources */,
 				A3ADD690243DD34E004B0CB8 /* ContactListView.swift in Sources */,
 				A3ADD6A6243DE099004B0CB8 /* BadgeView.swift in Sources */,
+				A3C0D32724431C03005F9B6C /* MomentTextCell.swift in Sources */,
 				A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */,
 				A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */,
 				A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */,
@@ -475,6 +508,7 @@
 				A3ADD69A243DD778004B0CB8 /* DiscoverRow.swift in Sources */,
 				A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */,
 				A37277632440641A007EC7A6 /* KeyboardObserver.swift in Sources */,
+				A3C0D32D24431C27005F9B6C /* MomentVideoCell.swift in Sources */,
 				A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */,
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
 				A3D8420B2440C1EE00ACE501 /* ContactAction.swift in Sources */,
@@ -483,12 +517,14 @@
 				A3F26362243EE10F00A093D2 /* SessionContextMenuView.swift in Sources */,
 				A372775C24405BE6007EC7A6 /* Constants.swift in Sources */,
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
+				A3C0D32F24431CA2005F9B6C /* MomentHeader.swift in Sources */,
 				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
 				A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
+				A3C0D32924431C0E005F9B6C /* MomentImageCell.swift in Sources */,
 				A3A8B02924401E3200FE0410 /* RichText.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
 				A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */,
@@ -497,14 +533,18 @@
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
+				A3C0D32424431BF2005F9B6C /* MomentRow.swift in Sources */,
+				A3C0D33124431CC0005F9B6C /* MomentNotificationRow.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,
 				A3F227822441704C00B0B77B /* SearchBar.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
+				A3C0D33324431D29005F9B6C /* Moment.swift in Sources */,
 				A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */,
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,
 				A3F2637E243F22E300A093D2 /* MeCardView.swift in Sources */,
 				A3ADD68E243DD33F004B0CB8 /* ContactRow.swift in Sources */,
 				A372775E24405DB1007EC7A6 /* EmoticonMessageCell.swift in Sources */,
+				A3C0D32B24431C1B005F9B6C /* MomentMultiImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,8 @@ struct SettingRow: View {
                 Text(title)
                 BadgeDot().opacity(self.unread ? 1: 0)
                 Spacer()
-                Image(systemName: "chevron.right").foregroundColor(.gray)
+                Image(systemName: "chevron.right")
+                    .foregroundColor(Color(UIColor.separator))
             }.padding()
         }
         .frame(height: 56)

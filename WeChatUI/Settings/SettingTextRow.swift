@@ -17,7 +17,8 @@ struct SettingTextRow: View {
             HStack {
                 Text(title)
                 Spacer()
-                Image(systemName: "chevron.right").foregroundColor(.gray)
+                Image(systemName: "chevron.right")
+                    .foregroundColor(Color(UIColor.separator))
             }.padding()
         }
         .frame(height: 56)

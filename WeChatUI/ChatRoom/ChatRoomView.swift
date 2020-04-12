@@ -34,6 +34,12 @@ struct ChatRoomView: View {
         }
         .padding(.bottom, keyboard.height)
         .animation(.easeIn(duration: 0.25))
+        .navigationBarTitle(session.name)
+        .navigationBarItems(trailing: Button(action: {
+            
+        }) {
+            Image(systemName: "ellipsis")
+        })
     }
 }
 

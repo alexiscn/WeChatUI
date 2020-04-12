@@ -11,7 +11,7 @@ import SwiftUI
 struct MeCardView: View {
     var body: some View {
         HStack(spacing: 0) {
-            Image("swiftui")
+            Image("swiftui").padding(.horizontal)
             VStack(alignment: .leading) {
                 Text("SwiftUI")
                 HStack {
@@ -20,7 +20,7 @@ struct MeCardView: View {
                         .foregroundColor(.gray)
                     Spacer()
                     Image(systemName: "chevron.right")
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color(UIColor.separator))
                 }
             }
             Spacer()

@@ -45,7 +45,8 @@ struct AboutView: View {
                 HStack {
                     Text("What's Fresh")
                     Spacer()
-                    Image(systemName: "chevron.right").foregroundColor(.gray)
+                    Image(systemName: "chevron.right")
+                        .foregroundColor(Color(UIColor.separator))
                 }
                 .frame(height: 40)
                 Divider()
@@ -53,7 +54,8 @@ struct AboutView: View {
                 HStack {
                     Text("Version Update")
                     Spacer()
-                    Image(systemName: "chevron.right").foregroundColor(.gray)
+                    Image(systemName: "chevron.right")
+                        .foregroundColor(Color(UIColor.separator))
                 }
                 .frame(height: 40)
                 
