@@ -47,9 +47,21 @@ struct SettingsListView: View {
                 
                 Group {
                     NavigationLink(destination: AboutView()) {
-                        SettingRow(icon: "icons_outlined_setting", title: "Settings")
+                        SettingTextRow(title: "WeChat Services")
                     }.buttonStyle(PlainButtonStyle())
-                }
+                    SectionSeparator()
+                }.background(Color(UIColor.systemBackground))
+                
+                Group {
+                    NavigationLink(destination: AboutView()) {
+                        SettingTextRow(title: "Switch Account")
+                    }.buttonStyle(PlainButtonStyle())
+                    SectionSeparator()
+                    NavigationLink(destination: AboutView()) {
+                        SettingTextRow(title: "Log Out")
+                    }.buttonStyle(PlainButtonStyle())
+                    SectionSeparator()
+                }.background(Color(UIColor.systemBackground))
             }
         }
         .background(Color(UIColor.systemGroupedBackground))

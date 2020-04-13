@@ -41,6 +41,7 @@
 		A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */; };
 		A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */; };
 		A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6AB243DFA9E004B0CB8 /* Line.swift */; };
+		A3B356A22444407400373657 /* ChatRoomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A12444407400373657 /* ChatRoomInfoView.swift */; };
 		A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */; };
 		A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C0D3182441D7BF005F9B6C /* expressions.json */; };
 		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
@@ -125,6 +126,7 @@
 		A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSeparator.swift; sourceTree = "<group>"; };
 		A3ADD6AB243DFA9E004B0CB8 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A3B356A12444407400373657 /* ChatRoomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomInfoView.swift; sourceTree = "<group>"; };
 		A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonBoard.swift; sourceTree = "<group>"; };
 		A3C0D3182441D7BF005F9B6C /* expressions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expressions.json; sourceTree = "<group>"; };
 		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		A3ADD689243DD31B004B0CB8 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				A3B356A02444406000373657 /* ChatRoomInfo */,
 				A372775F244061E2007EC7A6 /* Views */,
 				A37277582440540E007EC7A6 /* InputView */,
 				A3727751244052E4007EC7A6 /* Cells */,
@@ -337,6 +340,14 @@
 				A3F227812441704C00B0B77B /* SearchBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A3B356A02444406000373657 /* ChatRoomInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A3B356A12444407400373657 /* ChatRoomInfoView.swift */,
+			);
+			path = ChatRoomInfo;
 			sourceTree = "<group>";
 		};
 		A3C0D3172441D7AE005F9B6C /* Resources */ = {
@@ -530,6 +541,7 @@
 				A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */,
 				A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */,
 				A3F26381243F276000A093D2 /* SettingsListView.swift in Sources */,
+				A3B356A22444407400373657 /* ChatRoomInfoView.swift in Sources */,
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,

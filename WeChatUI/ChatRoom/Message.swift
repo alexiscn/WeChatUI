@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 import UIKit
 
 struct Message: Codable, Identifiable {
@@ -49,6 +50,8 @@ enum MessageContent {
     case text(String)
     case image(ImageMessage)
     case video(VideoMessage)
+    case voice(VoiceMessage)
+    case location(LocationMessage)
 }
 
 
@@ -62,4 +65,34 @@ struct ImageMessage {
 
 struct VideoMessage {
     
+    var size: CGSize
+    
+    var duration: TimeInterval
+    
+}
+
+struct VoiceMessage {
+    
+    var duration: Int
+    
+    var formattedDuration: String {
+        return String(format: "%d\"", duration)
+    }
+    
+}
+
+struct URLMessage {
+    
+}
+
+
+struct LocationMessage {
+    
+    var coordinate: CLLocationCoordinate2D
+    
+    var thumb: UIImage? = nil
+    
+    var title: String? = nil
+    
+    var subTitle: String? = nil
 }

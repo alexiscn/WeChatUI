@@ -26,6 +26,6 @@ struct VideoMessageCell: View {
 
 struct VideoMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        VideoMessageCell(video: VideoMessage())
+        VideoMessageCell(video: VideoMessage(size: .zero, duration: 3))
     }
 }

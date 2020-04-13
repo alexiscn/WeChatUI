@@ -42,6 +42,7 @@ struct ChatMessageRow: View {
                 }
             }
         }
+        .padding(.vertical, 3)
         
     }
     
@@ -54,6 +55,8 @@ struct ChatMessageRow: View {
             return AnyView(ImageMessageCell(image: image))
         case .video(let video):
             return AnyView(VideoMessageCell(video: video))
+        case .voice(let voice):
+            return AnyView(VoiceMessageCell(voice: voice, isOutgoing: message.isOutgoing))
         default:
             return AnyView(EmptyView())
         }

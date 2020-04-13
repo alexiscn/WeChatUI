@@ -23,7 +23,7 @@ struct TextMessageCell: View {
         ZStack {
             Text(text)
                 .padding(.horizontal)
-                .padding(.vertical, 7)
+                .padding(.vertical, 9)
                 .font(.system(size: 16))
         }
         .background(

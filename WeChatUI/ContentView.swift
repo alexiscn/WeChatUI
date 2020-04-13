@@ -16,51 +16,65 @@ struct ContentView: View {
  
     var body: some View {
         
-        NavigationView {
-            
-            TabView(selection: $selection){
+        ZStack {
+            NavigationView {
                 
-                SessionListView()
-                    .tabItem {
-                        VStack {
-                            Image("icons_filled_chats").renderingMode(.template)
-                            Text("Wechat")
-                        }
-                    }
-                    .tag(0)
+                TabView(selection: $selection){
                     
-                ContactListView()
-                    .tabItem {
-                        VStack {
-                            Image("icons_filled_me").renderingMode(.template)
-                            Text("Contacts")
+                    SessionListView()
+                        .tabItem {
+                            VStack {
+                                Image("icons_filled_chats").renderingMode(.template)
+                                Text("Wechat")
+                            }
                         }
-                    }
-                    .tag(1)
-                    
-                DiscoverListView()
-                    .tabItem {
-                        VStack {
-                            Image("icons_filled_discover").renderingMode(.template)
-                            Text("Discover")
+                        .tag(0)
+                        
+                    ContactListView()
+                        .tabItem {
+                            VStack {
+                                Image("icons_filled_me").renderingMode(.template)
+                                Text("Contacts")
+                            }
                         }
-                    }
-                    .tag(2)
-                    
-                MeListView()
-                    .tabItem {
-                        VStack {
-                            Image("icons_filled_me").renderingMode(.template)
-                            Text("Me")
+                        .tag(1)
+                        
+                    DiscoverListView()
+                        .tabItem {
+                            VStack {
+                                Image("icons_filled_discover").renderingMode(.template)
+                                Text("Discover")
+                            }
                         }
-                    }
-                    .tag(3)
+                        .tag(2)
+                        
+                    MeListView()
+                        .tabItem {
+                            VStack {
+                                Image("icons_filled_me").renderingMode(.template)
+                                Text("Me")
+                            }
+                        }
+                        .tag(3)
 
+                }
+                .accentColor(.wx_tintColor)
+                .navigationBarTitle(state.navigationBarTitle, displayMode: .inline)
+                .navigationBarItems(trailing: state.navigationBarTrailingItems)
+                .environmentObject(state)
             }
-            .accentColor(.wx_tintColor)
-            .navigationBarTitle(state.navigationBarTitle, displayMode: .inline)
-            .navigationBarItems(trailing: state.navigationBarTrailingItems)
-            .environmentObject(state)
+            
+            if self.state.showContextMenu {
+                GeometryReader { geometry in
+                    SessionContextMenuView().position(x: 250, y: 140)
+                }.background(
+                    Color.black.opacity(0.5).edgesIgnoringSafeArea(.all).onTapGesture {
+                        withAnimation {
+                            self.state.showContextMenu.toggle()
+                        }
+                    }
+                )
+            }
         }
     }
 }

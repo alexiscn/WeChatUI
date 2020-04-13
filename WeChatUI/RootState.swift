@@ -14,4 +14,6 @@ class RootState: ObservableObject {
     @Published var navigationBarTitle: LocalizedStringKey = ""
     
     @Published var navigationBarTrailingItems: AnyView = AnyView(EmptyView())
+    
+    @Published var showContextMenu = false
 }

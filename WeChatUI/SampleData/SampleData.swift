@@ -84,8 +84,8 @@ class SampleData {
                 msg.content = randomTextMessage()
             case 1:
                 msg.content = randomImageMessage()
-//            case 2:
-//                msg.content = randomVoiceMessage()
+            case 2:
+                msg.content = randomVoiceMessage()
 //            case 3:
 //                msg.content = randomEmoticonMessage()
 //            case 4:
@@ -116,6 +116,11 @@ class SampleData {
         //let msg = ImageMessage(url: image.url, size: image.size.value)
         let msg = ImageMessage(size: .zero, image: "2")
         return .image(msg)
+    }
+    
+    private func randomVoiceMessage() -> MessageContent {
+        let msg = VoiceMessage(duration: 4)
+        return .voice(msg)
     }
 }
 
