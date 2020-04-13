@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct MomentRow: View {
+    
+    var moment: Moment
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -16,6 +19,6 @@ struct MomentRow: View {
 
 struct MomentRow_Previews: PreviewProvider {
     static var previews: some View {
-        MomentRow()
+        MomentRow(moment: Moment(id: "111"))
     }
 }

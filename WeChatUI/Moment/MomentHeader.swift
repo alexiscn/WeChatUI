@@ -10,7 +10,25 @@ import SwiftUI
 
 struct MomentHeader: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack(alignment: .bottomTrailing) {
+            Image("1")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: Constants.screenWidth, height: Constants.screenWidth)
+                .clipped()
+            
+            HStack(alignment: .top) {
+                Text("SwiftUI")
+                    .foregroundColor(.white)
+                    .padding(.top, 5)
+                    .padding(.trailing)
+                Image("swiftui")
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                    .padding(.trailing)
+            }.padding(.bottom, -35)
+        }
     }
 }
 
