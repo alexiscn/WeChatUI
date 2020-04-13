@@ -26,8 +26,9 @@ struct BadgeView: View {
         ZStack {
             Circle()
                 .foregroundColor(.red)
-                .frame(width: 30, height: 30)
+                .frame(width: 18, height: 18)
             Text(computedText)
+                .font(.system(size: 11))
                 .foregroundColor(.white)
         }
     }

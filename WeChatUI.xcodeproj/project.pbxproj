@@ -42,6 +42,11 @@
 		A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */; };
 		A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6AB243DFA9E004B0CB8 /* Line.swift */; };
 		A3B356A22444407400373657 /* ChatRoomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A12444407400373657 /* ChatRoomInfoView.swift */; };
+		A3B356A42444460600373657 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A32444460600373657 /* PageControl.swift */; };
+		A3B356A62444483D00373657 /* ChatRoomToolBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A52444483D00373657 /* ChatRoomToolBoard.swift */; };
+		A3B356A82444484B00373657 /* ChatRoomToolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A72444484B00373657 /* ChatRoomToolCell.swift */; };
+		A3B356AA244448C800373657 /* ChatRoomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A9244448C800373657 /* ChatRoomTool.swift */; };
+		A3B356AC24444DC500373657 /* PageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356AB24444DC500373657 /* PageCollectionView.swift */; };
 		A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */; };
 		A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C0D3182441D7BF005F9B6C /* expressions.json */; };
 		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
@@ -127,6 +132,11 @@
 		A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSeparator.swift; sourceTree = "<group>"; };
 		A3ADD6AB243DFA9E004B0CB8 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		A3B356A12444407400373657 /* ChatRoomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomInfoView.swift; sourceTree = "<group>"; };
+		A3B356A32444460600373657 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		A3B356A52444483D00373657 /* ChatRoomToolBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomToolBoard.swift; sourceTree = "<group>"; };
+		A3B356A72444484B00373657 /* ChatRoomToolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomToolCell.swift; sourceTree = "<group>"; };
+		A3B356A9244448C800373657 /* ChatRoomTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTool.swift; sourceTree = "<group>"; };
+		A3B356AB24444DC500373657 /* PageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionView.swift; sourceTree = "<group>"; };
 		A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonBoard.swift; sourceTree = "<group>"; };
 		A3C0D3182441D7BF005F9B6C /* expressions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expressions.json; sourceTree = "<group>"; };
 		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -245,6 +255,8 @@
 				A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */,
 				A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */,
 				A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */,
+				A3B356A52444483D00373657 /* ChatRoomToolBoard.swift */,
+				A3B356A72444484B00373657 /* ChatRoomToolCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 				A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */,
 				A372774F24404741007EC7A6 /* ChatMessageRow.swift */,
 				A37277622440641A007EC7A6 /* KeyboardObserver.swift */,
+				A3B356A9244448C800373657 /* ChatRoomTool.swift */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -338,6 +351,8 @@
 				A3A8B02824401E3200FE0410 /* RichText.swift */,
 				A372776024406237007EC7A6 /* AvatarView.swift */,
 				A3F227812441704C00B0B77B /* SearchBar.swift */,
+				A3B356A32444460600373657 /* PageControl.swift */,
+				A3B356AB24444DC500373657 /* PageCollectionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -521,6 +536,7 @@
 				A37277632440641A007EC7A6 /* KeyboardObserver.swift in Sources */,
 				A3C0D32D24431C27005F9B6C /* MomentVideoCell.swift in Sources */,
 				A372775524405308007EC7A6 /* LocationMessageCell.swift in Sources */,
+				A3B356AC24444DC500373657 /* PageCollectionView.swift in Sources */,
 				A3634BF0243CA4A600D7954C /* AppDelegate.swift in Sources */,
 				A3D8420B2440C1EE00ACE501 /* ContactAction.swift in Sources */,
 				A372775A24405420007EC7A6 /* ChatInputView.swift in Sources */,
@@ -530,10 +546,12 @@
 				A3ADD69C243DD781004B0CB8 /* DiscoverListView.swift in Sources */,
 				A3C0D32F24431CA2005F9B6C /* MomentHeader.swift in Sources */,
 				A3A8B02B2440378900FE0410 /* RootState.swift in Sources */,
+				A3B356A62444483D00373657 /* ChatRoomToolBoard.swift in Sources */,
 				A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
+				A3B356AA244448C800373657 /* ChatRoomTool.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
 				A3C0D32924431C0E005F9B6C /* MomentImageCell.swift in Sources */,
 				A3A8B02924401E3200FE0410 /* RichText.swift in Sources */,
@@ -548,10 +566,12 @@
 				A3C0D32424431BF2005F9B6C /* MomentRow.swift in Sources */,
 				A3C0D33124431CC0005F9B6C /* MomentNotificationRow.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,
+				A3B356A42444460600373657 /* PageControl.swift in Sources */,
 				A3F227822441704C00B0B77B /* SearchBar.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
 				A3C0D33324431D29005F9B6C /* Moment.swift in Sources */,
 				A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */,
+				A3B356A82444484B00373657 /* ChatRoomToolCell.swift in Sources */,
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,
 				A3F2637E243F22E300A093D2 /* MeCardView.swift in Sources */,
 				A3ADD68E243DD33F004B0CB8 /* ContactRow.swift in Sources */,

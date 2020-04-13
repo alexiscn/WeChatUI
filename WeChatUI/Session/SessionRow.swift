@@ -15,11 +15,22 @@ struct SessionRow: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            KFImage(session.avatar)
-                .resizable()
-                .frame(width: 40, height: 40)
-                .cornerRadius(6)
-                .padding(.trailing, 8)
+            ZStack(alignment: .topTrailing) {
+                KFImage(session.avatar)
+                    .resizable()
+                    .frame(width: 48, height: 48)
+                    .cornerRadius(6)
+                
+                if session.unreadCount > 0 {
+                    if session.showUnreadAsRedDot {
+                        BadgeDot()
+                            .padding([.top, .trailing], -4)
+                    } else {
+                        BadgeView(number: 3)
+                            .padding([.top, .trailing], -8)
+                    }
+                }
+            }
             
             VStack(alignment: .leading) {
                 HStack {
@@ -39,7 +50,7 @@ struct SessionRow: View {
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
                     .lineLimit(1)
-            }
+            }.padding(.leading, 10)
             Spacer()
         }
         .frame(height: 50)

@@ -21,8 +21,11 @@ struct SessionListView: View {
             ForEach(sessions) { session in
                 ZStack {
                     NavigationLink(destination: ChatRoomView(session: session)) {
-                        SessionRow(session: session)
+                        EmptyView()
                     }
+                    .hidden()
+                    
+                    SessionRow(session: session)
                 }
             }
         }
