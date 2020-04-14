@@ -14,18 +14,28 @@ struct ImageMessageCell: View {
     
     var maxSize = Constants.screenWidth * 0.5
     
+    var minSize = Constants.screenWidth * 0.1
+    
+    var width: CGFloat {
+        let w = image.aspectRatio > 1 ?  maxSize: image.aspectRatio * maxSize
+        return max(w, minSize)
+    }
+    
+    var height: CGFloat {
+        let h = image.aspectRatio > 1 ? maxSize/image.aspectRatio : maxSize
+        return max(h, minSize)
+    }
+    
     var body: some View {
         Image("2")
             .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(maxWidth: maxSize, maxHeight: maxSize)
-            .clipped()
+            .frame(width: self.width, height: self.height)
             .cornerRadius(10)
     }
 }
 
 struct ImageMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        ImageMessageCell(image: ImageMessage(size: .zero, image: "11"))
+        ImageMessageCell(image: ImageMessage(image: "2", aspectRatio: 27.0/40))
     }
 }

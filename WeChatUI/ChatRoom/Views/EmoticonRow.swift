@@ -15,9 +15,8 @@ struct EmoticonRow: View {
     var body: some View {
         HStack {
             ForEach(items, id:\.self) { item in
-                EmoticonCell(emoticon: item)
+                EmoticonCell(emoticon: item).padding(.all, 2)
             }
-            Spacer()
         }
         .padding()
     }

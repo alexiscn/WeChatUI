@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-struct Message: Codable, Identifiable {
+class Message: Codable, Identifiable {
     
     static func == (lhs: Message, rhs: Message) -> Bool {
         return lhs.id == rhs.id
@@ -57,9 +57,9 @@ enum MessageContent {
 
 struct ImageMessage {
     
-    var size: CGSize
-    
     var image: String
+    
+    var aspectRatio: CGFloat = 1.0
 }
 
 

@@ -71,10 +71,10 @@ class SampleData {
         var messages: [Message] = []
         let myID = "10001"
         let now = Int(Date().timeIntervalSince1970)
-        let past = 1560493108
+        let past = Int(Date().timeIntervalSince1970) - 10 * 24 * 60 * 60
         for index in 0 ..< count {
             let randomTime = Int(arc4random_uniform(UInt32(now - past))) + past
-            var msg = Message(id: UUID().uuidString)
+            let msg = Message(id: UUID().uuidString)
             msg.chatId = session.id
             msg.senderId = index % 2 == 0 ? session.id: myID
             msg.time = randomTime
@@ -96,10 +96,46 @@ class SampleData {
             messages.append(msg)
         }
         messages.sort(by: { $0.time < $1.time })
+        formatMessageTime(messages)
         return messages
+    }
+    
+    private func formatMessageTime(_ messages: [Message]) {
         
-        // TODO
-        //return self.messages
+        guard var time = messages.first?.time else {
+            return
+        }
+        
+        messages.first?.displayedTimeText = formatTimestamp(TimeInterval(time))
+        for message in messages {
+            if message.time - time > 300 {
+                time = message.time
+                message.displayedTimeText = formatTimestamp(TimeInterval(time))
+            } else {
+                message.displayedTimeText = nil
+            }
+        }
+    }
+    
+    // https://kf.qq.com/faq/161224e2i22a161224qqYfAR.html
+    func formatTimestamp(_ timestamp: TimeInterval) -> String? {
+        var date = Date(timeIntervalSince1970: timestamp)
+        let now = Date()
+        let formatter = DateFormatter()
+        let nowTimestamp = now.timeIntervalSince1970
+        let day: TimeInterval = 24 * 60 * 60
+        let intervals = nowTimestamp - timestamp
+        if timestamp >= nowTimestamp {
+            formatter.dateFormat = "HH:mm"
+            date = now
+        } else if intervals >= 7 * day {
+            formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        } else if intervals > day {
+            formatter.dateFormat = "EEEE HH:mm"
+        } else {
+            formatter.dateFormat = "HH:mm"
+        }
+        return formatter.string(from: date)
     }
     
     func contacts() -> [Contact] {
@@ -114,7 +150,7 @@ class SampleData {
     private func randomImageMessage() -> MessageContent {
         //let image = random(of: data.images)
         //let msg = ImageMessage(url: image.url, size: image.size.value)
-        let msg = ImageMessage(size: .zero, image: "2")
+        let msg = ImageMessage(image: "2", aspectRatio: 27.0/40)
         return .image(msg)
     }
     

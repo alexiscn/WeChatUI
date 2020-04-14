@@ -17,7 +17,9 @@ struct SessionListView: View {
     var body: some View {
         
         List {
-            SearchBar().listRowInsets(EdgeInsets())
+            SearchBar()
+                .listRowInsets(.zero)
+            
             ForEach(sessions) { session in
                 ZStack {
                     NavigationLink(destination: ChatRoomView(session: session)) {
@@ -27,6 +29,7 @@ struct SessionListView: View {
                     
                     SessionRow(session: session)
                 }
+                .listRowInsets(.zero)
             }
         }
         .onAppear {
