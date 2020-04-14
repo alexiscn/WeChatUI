@@ -24,7 +24,7 @@ struct SearchBar: View {
             .cornerRadius(6)
         }
         .padding(.all, 12)
-        .background(Color(UIColor.systemGroupedBackground))
+        .background(VisualEffectView())
     }
 }
 

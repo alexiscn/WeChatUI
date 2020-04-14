@@ -22,6 +22,8 @@
 		A372775E24405DB1007EC7A6 /* EmoticonMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372775D24405DB1007EC7A6 /* EmoticonMessageCell.swift */; };
 		A372776124406237007EC7A6 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372776024406237007EC7A6 /* AvatarView.swift */; };
 		A37277632440641A007EC7A6 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37277622440641A007EC7A6 /* KeyboardObserver.swift */; };
+		A3A754F224455F01003716FF /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A754F124455F01003716FF /* VisualEffectView.swift */; };
+		A3A754F5244561B2003716FF /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A754F4244561B2003716FF /* EdgeInsets+Extensions.swift */; };
 		A3A8B02924401E3200FE0410 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02824401E3200FE0410 /* RichText.swift */; };
 		A3A8B02B2440378900FE0410 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8B02A2440378900FE0410 /* RootState.swift */; };
 		A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD682243DD10B004B0CB8 /* Session.swift */; };
@@ -112,6 +114,8 @@
 		A372775D24405DB1007EC7A6 /* EmoticonMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonMessageCell.swift; sourceTree = "<group>"; };
 		A372776024406237007EC7A6 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		A37277622440641A007EC7A6 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		A3A754F124455F01003716FF /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		A3A754F4244561B2003716FF /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		A3A8B02824401E3200FE0410 /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
 		A3A8B02A2440378900FE0410 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		A3ADD682243DD10B004B0CB8 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		A3634BEE243CA4A600D7954C /* WeChatUI */ = {
 			isa = PBXGroup;
 			children = (
+				A3A754F3244561A4003716FF /* Extensions */,
 				A3ADD69E243DDC14004B0CB8 /* Common */,
 				A3ADD6A4243DE084004B0CB8 /* Components */,
 				A3ADD696243DD75B004B0CB8 /* Discover */,
@@ -259,6 +264,14 @@
 				A3B356A72444484B00373657 /* ChatRoomToolCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A3A754F3244561A4003716FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3A754F4244561B2003716FF /* EdgeInsets+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A3ADD688243DD30E004B0CB8 /* Session */ = {
@@ -353,6 +366,7 @@
 				A3F227812441704C00B0B77B /* SearchBar.swift */,
 				A3B356A32444460600373657 /* PageControl.swift */,
 				A3B356AB24444DC500373657 /* PageCollectionView.swift */,
+				A3A754F124455F01003716FF /* VisualEffectView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -555,6 +569,7 @@
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,
 				A3C0D32924431C0E005F9B6C /* MomentImageCell.swift in Sources */,
 				A3A8B02924401E3200FE0410 /* RichText.swift in Sources */,
+				A3A754F5244561B2003716FF /* EdgeInsets+Extensions.swift in Sources */,
 				A3634BF2243CA4A600D7954C /* SceneDelegate.swift in Sources */,
 				A3D842072440A5C100ACE501 /* ContactSectionHeader.swift in Sources */,
 				A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */,
@@ -563,6 +578,7 @@
 				A3F26379243F178300A093D2 /* BadgeDot.swift in Sources */,
 				A3F2636C243F01AE00A093D2 /* TextMessageCell.swift in Sources */,
 				A3ADD698243DD766004B0CB8 /* Discover.swift in Sources */,
+				A3A754F224455F01003716FF /* VisualEffectView.swift in Sources */,
 				A3C0D32424431BF2005F9B6C /* MomentRow.swift in Sources */,
 				A3C0D33124431CC0005F9B6C /* MomentNotificationRow.swift in Sources */,
 				A3634BF4243CA4A600D7954C /* ContentView.swift in Sources */,

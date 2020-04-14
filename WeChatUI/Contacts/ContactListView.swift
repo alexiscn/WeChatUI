@@ -18,13 +18,16 @@ struct ContactListView: View {
     
     var body: some View {
         List {
+            SearchBar()
+                .listRowInsets(.zero)
+            
             ForEach(actions, id: \.self) { action in
                 VStack(spacing: 0) {
                     ContactActionRow(action: action)
                     Divider().padding(.leading, 60)
                 }
             }
-            .listRowInsets(EdgeInsets())
+            .listRowInsets(.zero)
             
             ForEach(contacts) { contact in
                 Section(header: ContactSectionHeader(title: "A")) {
