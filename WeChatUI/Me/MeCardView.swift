@@ -15,7 +15,7 @@ struct MeCardView: View {
             VStack(alignment: .leading) {
                 Text("SwiftUI")
                 HStack {
-                    Text("WeChatID: swiftui")
+                    Text("WeChatID: iloveswiftui")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                     Spacer()

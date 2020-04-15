@@ -50,13 +50,13 @@
 		A3B356A82444484B00373657 /* ChatRoomToolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A72444484B00373657 /* ChatRoomToolCell.swift */; };
 		A3B356AA244448C800373657 /* ChatRoomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A9244448C800373657 /* ChatRoomTool.swift */; };
 		A3B356AC24444DC500373657 /* PageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356AB24444DC500373657 /* PageCollectionView.swift */; };
+		A3B5F4482446E695006367A9 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5F4472446E695006367A9 /* ChatRoomViewModel.swift */; };
 		A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */; };
 		A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C0D3182441D7BF005F9B6C /* expressions.json */; };
 		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
 		A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */; };
 		A3C0D31F2441DB38005F9B6C /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */; };
 		A3C0D32424431BF2005F9B6C /* MomentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32324431BF2005F9B6C /* MomentRow.swift */; };
-		A3C0D32724431C03005F9B6C /* MomentTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32624431C03005F9B6C /* MomentTextCell.swift */; };
 		A3C0D32924431C0E005F9B6C /* MomentImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */; };
 		A3C0D32B24431C1B005F9B6C /* MomentMultiImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */; };
 		A3C0D32D24431C27005F9B6C /* MomentVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */; };
@@ -143,13 +143,13 @@
 		A3B356A72444484B00373657 /* ChatRoomToolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomToolCell.swift; sourceTree = "<group>"; };
 		A3B356A9244448C800373657 /* ChatRoomTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTool.swift; sourceTree = "<group>"; };
 		A3B356AB24444DC500373657 /* PageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionView.swift; sourceTree = "<group>"; };
+		A3B5F4472446E695006367A9 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
 		A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonBoard.swift; sourceTree = "<group>"; };
 		A3C0D3182441D7BF005F9B6C /* expressions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expressions.json; sourceTree = "<group>"; };
 		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		A3C0D31C2441D949005F9B6C /* EmoticonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonRow.swift; sourceTree = "<group>"; };
 		A3C0D31E2441DB38005F9B6C /* EmoticonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
 		A3C0D32324431BF2005F9B6C /* MomentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentRow.swift; sourceTree = "<group>"; };
-		A3C0D32624431C03005F9B6C /* MomentTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTextCell.swift; sourceTree = "<group>"; };
 		A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentImageCell.swift; sourceTree = "<group>"; };
 		A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentMultiImageCell.swift; sourceTree = "<group>"; };
 		A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentVideoCell.swift; sourceTree = "<group>"; };
@@ -300,6 +300,7 @@
 				A372774F24404741007EC7A6 /* ChatMessageRow.swift */,
 				A37277622440641A007EC7A6 /* KeyboardObserver.swift */,
 				A3B356A9244448C800373657 /* ChatRoomTool.swift */,
+				A3B5F4472446E695006367A9 /* ChatRoomViewModel.swift */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -393,7 +394,6 @@
 		A3C0D32524431BF7005F9B6C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A3C0D32624431C03005F9B6C /* MomentTextCell.swift */,
 				A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */,
 				A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */,
 				A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */,
@@ -534,7 +534,6 @@
 				A3F26387243F2EF100A093D2 /* AboutView.swift in Sources */,
 				A3ADD690243DD34E004B0CB8 /* ContactListView.swift in Sources */,
 				A3ADD6A6243DE099004B0CB8 /* BadgeView.swift in Sources */,
-				A3C0D32724431C03005F9B6C /* MomentTextCell.swift in Sources */,
 				A3ADD683243DD10B004B0CB8 /* Session.swift in Sources */,
 				A372775724405316007EC7A6 /* VoiceMessageCell.swift in Sources */,
 				A3F26360243ED2CE00A093D2 /* MomentView.swift in Sources */,
@@ -590,6 +589,7 @@
 				A3F227822441704C00B0B77B /* SearchBar.swift in Sources */,
 				A3ADD68C243DD336004B0CB8 /* Contact.swift in Sources */,
 				A3C0D33324431D29005F9B6C /* Moment.swift in Sources */,
+				A3B5F4482446E695006367A9 /* ChatRoomViewModel.swift in Sources */,
 				A3F26384243F2D3A00A093D2 /* SettingTextRow.swift in Sources */,
 				A3B356A82444484B00373657 /* ChatRoomToolCell.swift in Sources */,
 				A3F26364243EE49A00A093D2 /* SessionContextLine.swift in Sources */,

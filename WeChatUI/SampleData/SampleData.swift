@@ -66,6 +66,32 @@ class SampleData {
         return random(of: data.messages)
     }
     
+    func moments() -> [Moment] {
+        var moments: [Moment] = []
+        for _ in 0 ..< 20 {
+            let user = random(of: data.users)
+            var moment = Moment(id: UUID().uuidString)
+            moment.userId = user.identifier
+            moment.content = randomMessage()
+
+//            let r = Int.random(in: 0 ... 4)
+//            if r == 0 {
+//                moment.body = randomMomentImage()
+//                moment.comments = [randomMomentComment(of: user)]
+//                moment.likes = [randomMomentLike(of: user)]
+//            } else if r == 1 {
+//                moment.body = randomMomentMultiImage()
+//            } else if r == 2 {
+//                moment.body = randomMomentWebpages()
+//            } else {
+//
+//            }
+
+            moments.append(moment)
+        }
+        return moments
+    }
+    
     func loadMessages(with session: Session, count: Int = 20) -> [Message] {
         
         var messages: [Message] = []

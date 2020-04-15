@@ -15,8 +15,9 @@ struct MomentHeader: View {
             Image("1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: Constants.screenWidth, height: Constants.screenWidth)
+                .frame(width: Constants.screenWidth, height: Constants.screenWidth - 35)
                 .clipped()
+                .padding(.bottom, 35)
             
             HStack(alignment: .top) {
                 Text("SwiftUI")
@@ -27,8 +28,9 @@ struct MomentHeader: View {
                     .resizable()
                     .frame(width: 70, height: 70)
                     .padding(.trailing)
-            }.padding(.bottom, -35)
+            }
         }
+        .padding(.bottom, 12)
     }
 }
 

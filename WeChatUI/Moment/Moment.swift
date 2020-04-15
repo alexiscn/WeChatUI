@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct Moment: Identifiable {
-            
+
     var id: String
     
     var userId: String = ""
@@ -23,7 +23,6 @@ struct Moment: Identifiable {
 }
 
 enum MomentBody {
-    
     case none
     case image(MomentImage)
     case multi(MomentMultiImage)
