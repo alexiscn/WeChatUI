@@ -65,7 +65,7 @@ struct ChatMessageRow: View {
 
 struct ChatMessageRow_Previews: PreviewProvider {
     
-    private static let msg = SampleData.shared.messages.first!
+    private static let msg = SampleData.shared.loadMessages(with: session).first!
     
     private static let session = SampleData.shared.sessions.first!
     

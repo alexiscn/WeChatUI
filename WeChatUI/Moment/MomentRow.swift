@@ -68,6 +68,6 @@ struct MomentRow: View {
 
 struct MomentRow_Previews: PreviewProvider {
     static var previews: some View {
-        MomentRow(moment: Moment(id: "111"))
+        MomentRow(moment: Moment(id: "111", content: "GOT", body: .image(MomentImage(size: CGSize(width: 270, height: 400), image: UIImage(named: "2")))))
     }
 }
