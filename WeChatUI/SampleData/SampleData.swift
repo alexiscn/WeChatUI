@@ -64,7 +64,7 @@ extension SampleData {
 //                moment.comments = [randomMomentComment(of: user)]
 //                moment.likes = [randomMomentLike(of: user)]
             } else if r == 1 {
-//                moment.body = randomMomentMultiImage()
+                moment.body = randomMomentMultiImage()
             } else if r == 2 {
 //                moment.body = randomMomentWebpages()
             } else {
@@ -76,8 +76,18 @@ extension SampleData {
     }
     
     func randomMomentImage() -> MomentBody {
-        let body = MomentImage(size: CGSize(width: 270, height: 400), image: UIImage(named: "2"))
+        let body = MomentImage(id: UUID().uuidString, size: CGSize(width: 270, height: 400), image: UIImage(named: "2"))
         return .image(body)
+    }
+    
+    func randomMomentMultiImage() -> MomentBody {
+        var images: [MomentImage] = []
+        for _ in 0 ..< 9 {
+            let image = MomentImage(id: UUID().uuidString, size: CGSize(width: 270, height: 400), image: UIImage(named: "2"))
+            images.append(image)
+        }
+        let multiImages = MomentMultiImage(images: images)
+        return MomentBody.multi(multiImages)
     }
 }
 

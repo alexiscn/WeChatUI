@@ -37,6 +37,6 @@ struct MomentImageCell: View {
 
 struct MomentImageCell_Previews: PreviewProvider {
     static var previews: some View {
-        MomentImageCell(image: MomentImage())
+        MomentImageCell(image: MomentImage(id: UUID().uuidString))
     }
 }

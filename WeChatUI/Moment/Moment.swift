@@ -28,7 +28,9 @@ enum MomentBody {
     case multi(MomentMultiImage)
 }
 
-struct MomentImage {
+struct MomentImage: Identifiable {
+    
+    var id: String
     
     var size: CGSize = .zero
     

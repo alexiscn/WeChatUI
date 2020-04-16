@@ -60,6 +60,8 @@ struct MomentRow: View {
         switch moment.body {
         case .image(let image):
             return AnyView(MomentImageCell(image: image))
+        case .multi(let multi):
+            return AnyView(MomentMultiImageCell(images: multi.images))
         default:
             return AnyView(EmptyView())
         }
@@ -68,6 +70,6 @@ struct MomentRow: View {
 
 struct MomentRow_Previews: PreviewProvider {
     static var previews: some View {
-        MomentRow(moment: Moment(id: "111", content: "GOT", body: .image(MomentImage(size: CGSize(width: 270, height: 400), image: UIImage(named: "2")))))
+        MomentRow(moment: Moment(id: "111", content: "GOT", body: .image(MomentImage(id: UUID().uuidString, size: CGSize(width: 270, height: 400), image: UIImage(named: "2")))))
     }
 }
