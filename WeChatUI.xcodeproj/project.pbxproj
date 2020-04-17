@@ -51,6 +51,8 @@
 		A3B356AA244448C800373657 /* ChatRoomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A9244448C800373657 /* ChatRoomTool.swift */; };
 		A3B356AC24444DC500373657 /* PageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356AB24444DC500373657 /* PageCollectionView.swift */; };
 		A3B5F4482446E695006367A9 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5F4472446E695006367A9 /* ChatRoomViewModel.swift */; };
+		A3B7822F2449A9F700F2A716 /* MomentCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7822E2449A9F700F2A716 /* MomentCommentCell.swift */; };
+		A3B782312449ABFB00F2A716 /* MomentCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B782302449ABFB00F2A716 /* MomentCommentView.swift */; };
 		A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */; };
 		A3C0D3192441D7BF005F9B6C /* expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C0D3182441D7BF005F9B6C /* expressions.json */; };
 		A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0D31A2441D803005F9B6C /* Expression.swift */; };
@@ -144,6 +146,8 @@
 		A3B356A9244448C800373657 /* ChatRoomTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTool.swift; sourceTree = "<group>"; };
 		A3B356AB24444DC500373657 /* PageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionView.swift; sourceTree = "<group>"; };
 		A3B5F4472446E695006367A9 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		A3B7822E2449A9F700F2A716 /* MomentCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentCommentCell.swift; sourceTree = "<group>"; };
+		A3B782302449ABFB00F2A716 /* MomentCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentCommentView.swift; sourceTree = "<group>"; };
 		A3C0D3152441D6D7005F9B6C /* EmoticonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonBoard.swift; sourceTree = "<group>"; };
 		A3C0D3182441D7BF005F9B6C /* expressions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expressions.json; sourceTree = "<group>"; };
 		A3C0D31A2441D803005F9B6C /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -397,6 +401,7 @@
 				A3C0D32824431C0E005F9B6C /* MomentImageCell.swift */,
 				A3C0D32A24431C1B005F9B6C /* MomentMultiImageCell.swift */,
 				A3C0D32C24431C27005F9B6C /* MomentVideoCell.swift */,
+				A3B7822E2449A9F700F2A716 /* MomentCommentCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				A3C0D32E24431CA2005F9B6C /* MomentHeader.swift */,
 				A3C0D33024431CC0005F9B6C /* MomentNotificationRow.swift */,
 				A3C0D33224431D29005F9B6C /* Moment.swift */,
+				A3B782302449ABFB00F2A716 /* MomentCommentView.swift */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -543,6 +549,7 @@
 				A3ADD6A3243DDD38004B0CB8 /* MeListView.swift in Sources */,
 				A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */,
 				A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */,
+				A3B7822F2449A9F700F2A716 /* MomentCommentCell.swift in Sources */,
 				A3D842092440C1CA00ACE501 /* ContactActionRow.swift in Sources */,
 				A3727753244052FC007EC7A6 /* VideoMessageCell.swift in Sources */,
 				A372776124406237007EC7A6 /* AvatarView.swift in Sources */,
@@ -567,6 +574,7 @@
 				A3C0D31D2441D949005F9B6C /* EmoticonRow.swift in Sources */,
 				A3ADD6A0243DDC23004B0CB8 /* WXColor.swift in Sources */,
 				A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */,
+				A3B782312449ABFB00F2A716 /* MomentCommentView.swift in Sources */,
 				A3ADD695243DD72A004B0CB8 /* Message.swift in Sources */,
 				A3B356AA244448C800373657 /* ChatRoomTool.swift in Sources */,
 				A3F2636E243F01BC00A093D2 /* ImageMessageCell.swift in Sources */,

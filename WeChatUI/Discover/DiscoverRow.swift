@@ -14,10 +14,13 @@ struct DiscoverRow: View {
     
     @State var unread: Bool = false
     
+    @State var unreadCount: Int = 0
+    
     var body: some View {
         SettingRow(icon: discover.icon,
                    title: discover.title,
-                   unread: unread)
+                   unread: unread,
+                   unreadCount: unreadCount)
     }
     
 }

@@ -20,7 +20,7 @@ struct DiscoverListView: View {
                 VStack(spacing: 0) {
                     Group {
                         NavigationLink(destination: MomentView()) {
-                            DiscoverRow(discover: .moment)
+                            DiscoverRow(discover: .moment, unreadCount: 5)
                         }.buttonStyle(PlainButtonStyle())
                         SectionSeparator()
                     }

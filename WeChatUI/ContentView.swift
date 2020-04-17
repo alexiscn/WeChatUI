@@ -64,6 +64,7 @@ struct ContentView: View {
                 .environmentObject(state)
             }
             
+            
             if self.state.showContextMenu {
                 GeometryReader { geometry in
                     SessionContextMenuView().position(x: 250, y: 140)
