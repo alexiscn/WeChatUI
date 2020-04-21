@@ -58,7 +58,7 @@ struct ContentView: View {
                         .tag(3)
 
                 }
-                .accentColor(.wx_tintColor)
+                .accentColor(.wxBrand)
                 .navigationBarTitle(state.navigationBarTitle, displayMode: .inline)
                 .navigationBarItems(trailing: state.navigationBarTrailingItems)
                 .environmentObject(state)

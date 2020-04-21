@@ -22,27 +22,36 @@ struct VoiceMessageCell: View {
         ZStack {
             if isOutgoing {
                 HStack {
-                    Text(voice.formattedDuration)
-                    Image("ChatRoom_Bubble_Voice_Sender_24x24_")
+                    if self.voice.unread {
+                        BadgeDot()
+                    }
+                    HStack {
+                        Text(voice.formattedDuration)
+                        Image("ChatRoom_Bubble_Voice_Sender_24x24_")
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, 9)
+                    .background(
+                        Image("ChatRoom_Bubble_Text_Sender_Green_57x40_")
+                    )
                 }
-                .padding(.horizontal)
-                .padding(.vertical, 9)
-                .background(
-                    Image("ChatRoom_Bubble_Text_Sender_Green_57x40_")
-                )
             } else {
                 HStack {
-                    Image("ChatRoom_Bubble_Voice_Receiver_24x24_")
-                    Text(voice.formattedDuration)
+                    HStack {
+                        Image("ChatRoom_Bubble_Voice_Receiver_24x24_")
+                        Text(voice.formattedDuration)
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, 9)
+                    .background(
+                        Image("ChatRoom_Bubble_Text_Receiver_White_57x40_")
+                    )
+                    if self.voice.unread {
+                        BadgeDot()
+                    }
                 }
-                .padding(.horizontal)
-                .padding(.vertical, 9)
-                .background(
-                    Image("ChatRoom_Bubble_Text_Receiver_White_57x40_")
-                )
             }
         }
-        
     }
 }
 

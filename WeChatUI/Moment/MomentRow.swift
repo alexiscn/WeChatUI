@@ -15,6 +15,7 @@ struct MomentRow: View {
     
     var body: some View {
         
+        
         HStack(alignment: .top) {
             
             Image("1")
@@ -23,10 +24,11 @@ struct MomentRow: View {
                 .cornerRadius(6)
                 .padding(.leading)
          
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading, spacing: 5) {
                 
                 HStack {
-                    Text("name").foregroundColor(Color(UIColor.link))
+                    Text(moment.username)
+                        .foregroundColor(.wxLink_100)
                         .font(.headline)
                     Spacer()
                 }
@@ -37,6 +39,7 @@ struct MomentRow: View {
                 
                 content()
                 
+                // Time
                 HStack {
                     Text("9 mins ago")
                         .font(.footnote)
@@ -50,6 +53,11 @@ struct MomentRow: View {
                     }
                     .frame(width: 44, height: 28)
                     .padding(.trailing, 10)
+                }
+                
+                // Comments and likes
+                if moment.comments.count > 0 || moment.likes.count > 0 {
+                    MomentCommentView(moment: moment)
                 }
             }
         }

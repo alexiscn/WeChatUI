@@ -56,6 +56,7 @@ extension SampleData {
             let user = random(of: data.users)
             var moment = Moment(id: UUID().uuidString)
             moment.userId = user.identifier
+            moment.username = user.name
             moment.content = randomMessage()
 
             let r = Int.random(in: 0 ... 4)

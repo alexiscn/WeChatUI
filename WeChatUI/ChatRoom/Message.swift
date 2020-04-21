@@ -75,6 +75,8 @@ struct VoiceMessage {
     
     var duration: Int
     
+    var unread = false
+    
     var formattedDuration: String {
         return String(format: "%d\"", duration)
     }

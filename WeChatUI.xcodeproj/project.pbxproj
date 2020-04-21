@@ -44,6 +44,7 @@
 		A3ADD6A8243DE1C2004B0CB8 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */; };
 		A3ADD6AA243DF9DD004B0CB8 /* SectionSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */; };
 		A3ADD6AC243DFA9E004B0CB8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADD6AB243DFA9E004B0CB8 /* Line.swift */; };
+		A3B2D13B244E9BEF00021EF5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2D13A244E9BEF00021EF5 /* UIColor+Extensions.swift */; };
 		A3B356A22444407400373657 /* ChatRoomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A12444407400373657 /* ChatRoomInfoView.swift */; };
 		A3B356A42444460600373657 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A32444460600373657 /* PageControl.swift */; };
 		A3B356A62444483D00373657 /* ChatRoomToolBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B356A52444483D00373657 /* ChatRoomToolBoard.swift */; };
@@ -139,6 +140,7 @@
 		A3ADD6A7243DE1C2004B0CB8 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		A3ADD6A9243DF9DD004B0CB8 /* SectionSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSeparator.swift; sourceTree = "<group>"; };
 		A3ADD6AB243DFA9E004B0CB8 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A3B2D13A244E9BEF00021EF5 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		A3B356A12444407400373657 /* ChatRoomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomInfoView.swift; sourceTree = "<group>"; };
 		A3B356A32444460600373657 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		A3B356A52444483D00373657 /* ChatRoomToolBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomToolBoard.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A754F4244561B2003716FF /* EdgeInsets+Extensions.swift */,
+				A3B2D13A244E9BEF00021EF5 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				A3C0D3162441D6D7005F9B6C /* EmoticonBoard.swift in Sources */,
 				A3ADD693243DD3BF004B0CB8 /* SampleData.swift in Sources */,
 				A3ADD6A3243DDD38004B0CB8 /* MeListView.swift in Sources */,
+				A3B2D13B244E9BEF00021EF5 /* UIColor+Extensions.swift in Sources */,
 				A3C0D31B2441D803005F9B6C /* Expression.swift in Sources */,
 				A3F2637C243F1EFE00A093D2 /* SettingRow.swift in Sources */,
 				A3B7822F2449A9F700F2A716 /* MomentCommentCell.swift in Sources */,

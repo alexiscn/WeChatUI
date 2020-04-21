@@ -15,11 +15,17 @@ struct Moment: Identifiable {
     
     var userId: String = ""
     
+    var username: String = ""
+    
     var time: Int = 0
     
     var content: String? = nil
     
     var body: MomentBody = .none
+    
+    var likes: [MomentLike] = []
+    
+    var comments: [MomentComment] = []
 }
 
 enum MomentBody {
@@ -65,4 +71,12 @@ class MomentComment {
     var type: Int = 0
     
     var canBeDeleted: Bool = false
+}
+
+
+struct MomentLike {
+    
+    var userId: String
+    
+    var username: String
 }
