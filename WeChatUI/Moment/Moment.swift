@@ -48,9 +48,17 @@ struct MomentMultiImage {
     var images: [MomentImage]
 }
 
-class MomentComment {
+class MomentComment: Hashable, Identifiable {
     
-    var commentId: String = ""
+    static func == (lhs: MomentComment, rhs: MomentComment) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    var id: String = ""
     
     var nickname: String = ""
     

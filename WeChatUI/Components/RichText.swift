@@ -22,7 +22,6 @@ struct RichText: UIViewRepresentable {
         let label = UILabel()
         label.textAlignment = .left
         label.numberOfLines = 0
-        //label.lineBreakMode = .byWordWrapping
         label.autoresizesSubviews = true
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         return label

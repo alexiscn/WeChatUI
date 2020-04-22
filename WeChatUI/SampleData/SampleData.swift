@@ -62,8 +62,8 @@ extension SampleData {
             let r = Int.random(in: 0 ... 4)
             if r == 0 {
                 moment.body = randomMomentImage()
-//                moment.comments = [randomMomentComment(of: user)]
-//                moment.likes = [randomMomentLike(of: user)]
+                moment.comments = [randomMomentComment(of: user)]
+                moment.likes = [randomMomentLike(of: user)]
             } else if r == 1 {
                 moment.body = randomMomentMultiImage()
             } else if r == 2 {
@@ -89,6 +89,19 @@ extension SampleData {
         }
         let multiImages = MomentMultiImage(images: images)
         return MomentBody.multi(multiImages)
+    }
+    
+    func randomMomentComment(of user: User) -> MomentComment {
+        let comment = MomentComment()
+        comment.nickname = user.name
+        comment.content = randomMessage()
+        comment.userId = user.identifier
+        return comment
+    }
+    
+    func randomMomentLike(of user: User) -> MomentLike {
+        let like = MomentLike(userId: user.identifier, username: user.name)
+        return like
     }
 }
 

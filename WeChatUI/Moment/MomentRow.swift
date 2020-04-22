@@ -58,6 +58,7 @@ struct MomentRow: View {
                 // Comments and likes
                 if moment.comments.count > 0 || moment.likes.count > 0 {
                     MomentCommentView(moment: moment)
+                        .padding(.trailing, 12)
                 }
             }
         }
@@ -77,7 +78,10 @@ struct MomentRow: View {
 }
 
 struct MomentRow_Previews: PreviewProvider {
+    
+    static let moment = SampleData.shared.moments().first(where: { $0.comments.count > 0 } )!
+    
     static var previews: some View {
-        MomentRow(moment: Moment(id: "111", content: "GOT", body: .image(MomentImage(id: UUID().uuidString, size: CGSize(width: 270, height: 400), image: UIImage(named: "2")))))
+        MomentRow(moment: moment)
     }
 }
